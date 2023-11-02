@@ -3,7 +3,7 @@ guid: 40ad333f0e472644cab309e8b6786000
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -5082,245 +5089,244 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fd_christmas_23: 970513984
-      fd_christmas_152: 1314863322
-      fd_christmas_202: 1159505361
-      fd_christmas_166: 2122700230
-      fd_christmas_155: -273615069
-      fd_christmas_184: -1188643142
-      fd_christmas_8: -977299675
-      fd_christmas_161: -2040039468
-      fd_christmas_118: -1416615459
-      fd_christmas_109: -756628427
+      fd_christmas_0: -2027531549
       fd_christmas_1: -1149056376
-      fd_christmas_124: 713443328
-      fd_christmas_38: -1294854299
-      fd_christmas_149: -711129505
-      fd_christmas_178: -928202455
-      fd_christmas_79: 927444973
-      fd_christmas_33: -725282560
-      fd_christmas_77: -71976073
-      fd_christmas_37: -226106131
-      fd_christmas_91: 2103895377
-      fd_christmas_63: -1451285289
-      fd_christmas_60: -1006636003
-      fd_christmas_172: 618981626
-      fd_christmas_58: 1552397284
-      fd_christmas_181: -777444767
-      fd_christmas_133: 104622600
-      fd_christmas_78: -817467407
-      fd_christmas_111: 1266411458
-      fd_christmas_3: 1288588445
-      fd_christmas_164: 2086950402
-      fd_christmas_196: 2144829778
-      fd_christmas_49: -1625087735
-      fd_christmas_180: -690996551
-      fd_christmas_170: -474509509
-      fd_christmas_70: 1189299062
-      fd_christmas_50: -1771959730
-      fd_christmas_199: 1588596431
-      fd_christmas_74: -309105313
-      fd_christmas_87: 180625595
-      fd_christmas_147: -1631711561
-      fd_christmas_4: -354411283
-      fd_christmas_139: 1126375397
-      fd_christmas_234: -1125014055
-      fd_christmas_7: 1968535173
-      fd_christmas_54: -1933574419
-      fd_christmas_167: 34787679
-      fd_christmas_168: 299870519
-      fd_christmas_121: -337968145
-      fd_christmas_106: 586000046
-      fd_christmas_90: 1334479048
-      fd_christmas_210: -81488806
-      fd_christmas_220: 587889353
-      fd_christmas_16: 548352753
-      fd_christmas_213: 1609538733
-      fd_christmas_48: 839426741
-      fd_christmas_94: 885064293
-      fd_christmas_12: 2008851455
-      fd_christmas_107: 2124198839
-      fd_christmas_127: -921425493
-      fd_christmas_108: 369908386
-      fd_christmas_131: -1228163830
-      fd_christmas_135: -566617977
+      fd_christmas_10: 595332892
       fd_christmas_100: 2130484169
-      fd_christmas_230: -320022543
-      fd_christmas_88: 1366961378
-      fd_christmas_75: -1732454667
-      fd_christmas_146: 874135967
-      fd_christmas_114: 1706898390
-      fd_christmas_98: 1544743323
-      fd_christmas_162: 347683282
-      fd_christmas_15: -1578935390
-      fd_christmas_52: -815466640
-      fd_christmas_195: -1212339548
-      fd_christmas_84: 441658553
-      fd_christmas_21: 2026060380
-      fd_christmas_71: 770921270
-      fd_christmas_93: -431728747
-      fd_christmas_231: 46168745
-      fd_christmas_151: 1243547065
-      fd_christmas_137: 776533369
-      fd_christmas_14: -1096829011
-      fd_christmas_73: -997457902
-      fd_christmas_28: -1061827664
-      fd_christmas_96: -937762101
-      fd_christmas_82: 1622092546
-      fd_christmas_163: 1673760776
-      fd_christmas_205: -1218556946
-      fd_christmas_174: 1770540742
-      fd_christmas_216: -1729889814
-      fd_christmas_24: 603825600
-      fd_christmas_67: 2021268413
-      fd_christmas_212: -976092786
-      fd_christmas_13: 1669327365
-      fd_christmas_226: 741553446
-      fd_christmas_159: -373942881
-      fd_christmas_176: -1506182512
-      fd_christmas_140: 653981893
-      fd_christmas_11: -1483638005
-      fd_christmas_186: 193594175
-      fd_christmas_110: 673378220
-      fd_christmas_141: 1401767838
-      fd_christmas_150: 1674481057
-      fd_christmas_198: 2099932416
-      fd_christmas_5: -1957752212
-      fd_christmas_204: 1909352916
-      fd_christmas_76: -1544972429
-      fd_christmas_126: -905333369
-      fd_christmas_95: 22083506
-      fd_christmas_177: 1597685879
-      fd_christmas_19: -1642093796
-      fd_christmas_66: 432327191
-      fd_christmas_83: -1583115018
-      fd_christmas_188: 764619863
-      fd_christmas_123: -255884012
-      fd_christmas_142: -622729677
+      fd_christmas_101: -2065547568
+      fd_christmas_102: -1703932886
       fd_christmas_103: -1817765720
-      fd_christmas_214: 1171697120
-      fd_christmas_233: -25219372
-      fd_christmas_44: -554384933
-      fd_christmas_61: -1338215463
-      fd_christmas_201: -1425690479
-      fd_christmas_128: 56345565
-      fd_christmas_92: -1329654704
-      fd_christmas_51: 2010556114
-      fd_christmas_235: 537188335
-      fd_christmas_40: 2040877285
-      fd_christmas_20: -419918847
-      fd_christmas_134: 1847086249
-      fd_christmas_35: -2121200724
-      fd_christmas_158: -992313931
-      fd_christmas_189: -31546596
-      fd_christmas_160: 126353537
-      fd_christmas_43: -264905727
-      fd_christmas_22: -585768947
-      fd_christmas_68: -1352331719
-      fd_christmas_190: -910821372
-      fd_christmas_227: 1344848961
-      fd_christmas_42: -409451776
-      fd_christmas_2: -576265329
+      fd_christmas_104: 325411102
       fd_christmas_105: -1840788445
-      fd_christmas_136: 1740114900
-      fd_christmas_215: 1984347381
-      fd_christmas_193: 1439769449
-      fd_christmas_217: 1796210077
-      fd_christmas_222: -1735855850
-      fd_christmas_183: -1506670479
-      fd_christmas_187: -1595922964
-      fd_christmas_65: 163420698
-      fd_christmas_64: 1948754081
+      fd_christmas_106: 586000046
+      fd_christmas_107: 2124198839
+      fd_christmas_108: 369908386
+      fd_christmas_109: -756628427
+      fd_christmas_11: -1483638005
+      fd_christmas_110: 673378220
+      fd_christmas_111: 1266411458
+      fd_christmas_112: -734208214
+      fd_christmas_113: 1768146205
+      fd_christmas_114: 1706898390
+      fd_christmas_115: 1735383955
+      fd_christmas_116: 1446276364
+      fd_christmas_117: 423585892
+      fd_christmas_118: -1416615459
+      fd_christmas_119: -1742739273
+      fd_christmas_12: 2008851455
       fd_christmas_120: -1361375793
-      fd_christmas_182: -1019882797
-      fd_christmas_175: -521606190
+      fd_christmas_121: -337968145
+      fd_christmas_122: 338287595
+      fd_christmas_123: -255884012
+      fd_christmas_124: 713443328
+      fd_christmas_125: 1254554937
+      fd_christmas_126: -905333369
+      fd_christmas_127: -921425493
+      fd_christmas_128: 56345565
+      fd_christmas_129: -241154389
+      fd_christmas_13: 1669327365
+      fd_christmas_130: 79755828
+      fd_christmas_131: -1228163830
+      fd_christmas_132: 100066108
+      fd_christmas_133: 104622600
+      fd_christmas_134: 1847086249
+      fd_christmas_135: -566617977
+      fd_christmas_136: 1740114900
+      fd_christmas_137: 776533369
+      fd_christmas_138: 1878697680
+      fd_christmas_139: 1126375397
+      fd_christmas_14: -1096829011
+      fd_christmas_140: 653981893
+      fd_christmas_141: 1401767838
+      fd_christmas_142: -622729677
+      fd_christmas_143: 2109373230
       fd_christmas_144: -454235814
       fd_christmas_145: 1262044696
-      fd_christmas_17: -1454469347
-      fd_christmas_26: 437930597
-      fd_christmas_62: -1218634108
-      fd_christmas_39: 968261707
-      fd_christmas_203: 1567022788
-      fd_christmas_104: 325411102
-      fd_christmas_119: -1742739273
-      fd_christmas_208: 1454437118
-      fd_christmas_57: 132028665
-      fd_christmas_30: 1556778114
-      fd_christmas_173: 2138271852
-      fd_christmas_125: 1254554937
-      fd_christmas_85: -1601492020
-      fd_christmas_130: 79755828
-      fd_christmas_34: 1977905841
-      fd_christmas_18: -1613406399
-      fd_christmas_209: -1807845819
-      fd_christmas_47: -306958507
-      fd_christmas_97: -1895393139
-      fd_christmas_112: -734208214
-      fd_christmas_156: 1737668542
-      fd_christmas_185: -2072072078
-      fd_christmas_179: -523061462
-      fd_christmas_194: -1714731376
-      fd_christmas_138: 1878697680
-      fd_christmas_72: -107161491
-      fd_christmas_154: -1878190574
-      fd_christmas_115: 1735383955
-      fd_christmas_200: 1878412146
-      fd_christmas_221: 635842190
-      fd_christmas_10: 595332892
-      fd_christmas_32: -132410751
-      fd_christmas_6: 734966764
-      fd_christmas_113: 1768146205
-      fd_christmas_228: 1784023403
-      fd_christmas_102: -1703932886
-      fd_christmas_207: -1944694352
-      fd_christmas_25: 237278530
-      fd_christmas_197: -1729024460
-      fd_christmas_53: -2038565775
-      fd_christmas_101: -2065547568
-      fd_christmas_165: -896367897
+      fd_christmas_146: 874135967
+      fd_christmas_147: -1631711561
       fd_christmas_148: 49830576
-      fd_christmas_223: -1084801787
-      fd_christmas_219: 1560347625
-      fd_christmas_80: 776771775
-      fd_christmas_229: -721398132
-      fd_christmas_129: -241154389
-      fd_christmas_27: -455451956
-      fd_christmas_69: 389128015
-      fd_christmas_55: -2096251255
-      fd_christmas_224: -827481437
-      fd_christmas_29: -319485681
-      fd_christmas_143: 2109373230
-      fd_christmas_0: -2027531549
-      fd_christmas_116: 1446276364
+      fd_christmas_149: -711129505
+      fd_christmas_15: -1578935390
+      fd_christmas_150: 1674481057
+      fd_christmas_151: 1243547065
+      fd_christmas_152: 1314863322
       fd_christmas_153: -145382151
-      fd_christmas_225: 900908204
-      fd_christmas_169: -2005502830
-      fd_christmas_117: 423585892
-      fd_christmas_89: -1459244509
-      fd_christmas_56: 920512209
+      fd_christmas_154: -1878190574
+      fd_christmas_155: -273615069
+      fd_christmas_156: 1737668542
       fd_christmas_157: 423854195
-      fd_christmas_132: 100066108
-      fd_christmas_45: -249320633
-      fd_christmas_211: -843169287
-      fd_christmas_99: 1035883036
-      fd_christmas_191: 1282395969
-      fd_christmas_46: 253287794
-      fd_christmas_86: 398677441
-      fd_christmas_122: 338287595
-      fd_christmas_36: 262556867
+      fd_christmas_158: -992313931
+      fd_christmas_159: -373942881
+      fd_christmas_16: 548352753
+      fd_christmas_160: 126353537
+      fd_christmas_161: -2040039468
+      fd_christmas_162: 347683282
+      fd_christmas_163: 1673760776
+      fd_christmas_164: 2086950402
+      fd_christmas_165: -896367897
+      fd_christmas_166: 2122700230
+      fd_christmas_167: 34787679
+      fd_christmas_168: 299870519
+      fd_christmas_169: -2005502830
+      fd_christmas_17: -1454469347
+      fd_christmas_170: -474509509
       fd_christmas_171: 861930809
-      fd_christmas_59: 1025092377
+      fd_christmas_172: 618981626
+      fd_christmas_173: 2138271852
+      fd_christmas_174: 1770540742
+      fd_christmas_175: -521606190
+      fd_christmas_176: -1506182512
+      fd_christmas_177: 1597685879
+      fd_christmas_178: -928202455
+      fd_christmas_179: -523061462
+      fd_christmas_18: -1613406399
+      fd_christmas_180: -690996551
+      fd_christmas_181: -777444767
+      fd_christmas_182: -1019882797
+      fd_christmas_183: -1506670479
+      fd_christmas_184: -1188643142
+      fd_christmas_185: -2072072078
+      fd_christmas_186: 193594175
+      fd_christmas_187: -1595922964
+      fd_christmas_188: 764619863
+      fd_christmas_189: -31546596
+      fd_christmas_19: -1642093796
+      fd_christmas_190: -910821372
+      fd_christmas_191: 1282395969
       fd_christmas_192: 2088635566
-      fd_christmas_41: 702467231
-      fd_christmas_218: -140673846
-      fd_christmas_31: 131232546
-      fd_christmas_9: -166551712
+      fd_christmas_193: 1439769449
+      fd_christmas_194: -1714731376
+      fd_christmas_195: -1212339548
+      fd_christmas_196: 2144829778
+      fd_christmas_197: -1729024460
+      fd_christmas_198: 2099932416
+      fd_christmas_199: 1588596431
+      fd_christmas_2: -576265329
+      fd_christmas_20: -419918847
+      fd_christmas_200: 1878412146
+      fd_christmas_201: -1425690479
+      fd_christmas_202: 1159505361
+      fd_christmas_203: 1567022788
+      fd_christmas_204: 1909352916
+      fd_christmas_205: -1218556946
       fd_christmas_206: -1052087247
+      fd_christmas_207: -1944694352
+      fd_christmas_208: 1454437118
+      fd_christmas_209: -1807845819
+      fd_christmas_21: 2026060380
+      fd_christmas_210: -81488806
+      fd_christmas_211: -843169287
+      fd_christmas_212: -976092786
+      fd_christmas_213: 1609538733
+      fd_christmas_214: 1171697120
+      fd_christmas_215: 1984347381
+      fd_christmas_216: -1729889814
+      fd_christmas_217: 1796210077
+      fd_christmas_218: -140673846
+      fd_christmas_219: 1560347625
+      fd_christmas_22: -585768947
+      fd_christmas_220: 587889353
+      fd_christmas_221: 635842190
+      fd_christmas_222: -1735855850
+      fd_christmas_223: -1084801787
+      fd_christmas_224: -827481437
+      fd_christmas_225: 900908204
+      fd_christmas_226: 741553446
+      fd_christmas_227: 1344848961
+      fd_christmas_228: 1784023403
+      fd_christmas_229: -721398132
+      fd_christmas_23: 970513984
+      fd_christmas_230: -320022543
+      fd_christmas_231: 46168745
       fd_christmas_232: 895021137
+      fd_christmas_233: -25219372
+      fd_christmas_234: -1125014055
+      fd_christmas_235: 537188335
+      fd_christmas_24: 603825600
+      fd_christmas_25: 237278530
+      fd_christmas_26: 437930597
+      fd_christmas_27: -455451956
+      fd_christmas_28: -1061827664
+      fd_christmas_29: -319485681
+      fd_christmas_3: 1288588445
+      fd_christmas_30: 1556778114
+      fd_christmas_31: 131232546
+      fd_christmas_32: -132410751
+      fd_christmas_33: -725282560
+      fd_christmas_34: 1977905841
+      fd_christmas_35: -2121200724
+      fd_christmas_36: 262556867
+      fd_christmas_37: -226106131
+      fd_christmas_38: -1294854299
+      fd_christmas_39: 968261707
+      fd_christmas_4: -354411283
+      fd_christmas_40: 2040877285
+      fd_christmas_41: 702467231
+      fd_christmas_42: -409451776
+      fd_christmas_43: -264905727
+      fd_christmas_44: -554384933
+      fd_christmas_45: -249320633
+      fd_christmas_46: 253287794
+      fd_christmas_47: -306958507
+      fd_christmas_48: 839426741
+      fd_christmas_49: -1625087735
+      fd_christmas_5: -1957752212
+      fd_christmas_50: -1771959730
+      fd_christmas_51: 2010556114
+      fd_christmas_52: -815466640
+      fd_christmas_53: -2038565775
+      fd_christmas_54: -1933574419
+      fd_christmas_55: -2096251255
+      fd_christmas_56: 920512209
+      fd_christmas_57: 132028665
+      fd_christmas_58: 1552397284
+      fd_christmas_59: 1025092377
+      fd_christmas_6: 734966764
+      fd_christmas_60: -1006636003
+      fd_christmas_61: -1338215463
+      fd_christmas_62: -1218634108
+      fd_christmas_63: -1451285289
+      fd_christmas_64: 1948754081
+      fd_christmas_65: 163420698
+      fd_christmas_66: 432327191
+      fd_christmas_67: 2021268413
+      fd_christmas_68: -1352331719
+      fd_christmas_69: 389128015
+      fd_christmas_7: 1968535173
+      fd_christmas_70: 1189299062
+      fd_christmas_71: 770921270
+      fd_christmas_72: -107161491
+      fd_christmas_73: -997457902
+      fd_christmas_74: -309105313
+      fd_christmas_75: -1732454667
+      fd_christmas_76: -1544972429
+      fd_christmas_77: -71976073
+      fd_christmas_78: -817467407
+      fd_christmas_79: 927444973
+      fd_christmas_8: -977299675
+      fd_christmas_80: 776771775
       fd_christmas_81: 1937098996
-  spritePackingTag: 
+      fd_christmas_82: 1622092546
+      fd_christmas_83: -1583115018
+      fd_christmas_84: 441658553
+      fd_christmas_85: -1601492020
+      fd_christmas_86: 398677441
+      fd_christmas_87: 180625595
+      fd_christmas_88: 1366961378
+      fd_christmas_89: -1459244509
+      fd_christmas_9: -166551712
+      fd_christmas_90: 1334479048
+      fd_christmas_91: 2103895377
+      fd_christmas_92: -1329654704
+      fd_christmas_93: -431728747
+      fd_christmas_94: 885064293
+      fd_christmas_95: 22083506
+      fd_christmas_96: -937762101
+      fd_christmas_97: -1895393139
+      fd_christmas_98: 1544743323
+      fd_christmas_99: 1035883036
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

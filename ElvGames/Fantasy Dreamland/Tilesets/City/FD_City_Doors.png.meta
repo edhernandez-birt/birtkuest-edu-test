@@ -3,7 +3,7 @@ guid: e8f87a2dbe1898b478cbfa496d25396a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2226,109 +2233,108 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FD_City_Doors_6: -31754029
-      FD_City_Doors_20: 377786961
-      FD_City_Doors_90: -1271364191
-      FD_City_Doors_96: -1919009316
-      FD_City_Doors_57: -684522769
-      FD_City_Doors_93: -313466816
-      FD_City_Doors_98: -414679472
-      FD_City_Doors_45: 878019242
-      FD_City_Doors_82: 1848485073
-      FD_City_Doors_80: 1744057242
-      FD_City_Doors_52: -398797549
-      FD_City_Doors_47: 880219565
-      FD_City_Doors_31: -2126052669
-      FD_City_Doors_79: 388477683
-      FD_City_Doors_11: 221385501
-      FD_City_Doors_60: 199040831
-      FD_City_Doors_71: 1191078986
-      FD_City_Doors_8: 43855145
-      FD_City_Doors_23: 1189589876
-      FD_City_Doors_5: 871148413
-      FD_City_Doors_34: 75729890
-      FD_City_Doors_33: -1581818756
-      FD_City_Doors_56: 1228493509
-      FD_City_Doors_73: 1524200841
-      FD_City_Doors_39: 1297983066
-      FD_City_Doors_91: -154103018
-      FD_City_Doors_55: -1847343746
-      FD_City_Doors_4: 679197047
-      FD_City_Doors_35: -243362627
-      FD_City_Doors_9: 613387985
-      FD_City_Doors_36: 744301578
-      FD_City_Doors_12: -281789242
-      FD_City_Doors_77: -368175816
-      FD_City_Doors_84: -293617325
-      FD_City_Doors_78: -1693189989
-      FD_City_Doors_86: -860934861
       FD_City_Doors_0: 169497953
-      FD_City_Doors_26: -817501779
-      FD_City_Doors_42: -1318503152
-      FD_City_Doors_22: -1236943164
-      FD_City_Doors_81: -258905812
-      FD_City_Doors_53: -1042863878
-      FD_City_Doors_21: -1823917279
-      FD_City_Doors_74: -513546696
-      FD_City_Doors_49: 1901284749
-      FD_City_Doors_16: -527437571
-      FD_City_Doors_3: 1954882057
-      FD_City_Doors_67: 728806485
-      FD_City_Doors_51: -1266172012
-      FD_City_Doors_69: 2078074533
-      FD_City_Doors_85: 1657980165
-      FD_City_Doors_10: -1453578354
-      FD_City_Doors_27: -1905811545
-      FD_City_Doors_72: 528172882
-      FD_City_Doors_17: 789870828
-      FD_City_Doors_41: -440069520
-      FD_City_Doors_2: 2108053599
-      FD_City_Doors_59: -2089098073
-      FD_City_Doors_18: -1066076078
-      FD_City_Doors_44: 578794962
-      FD_City_Doors_63: -33226381
-      FD_City_Doors_87: 781480823
-      FD_City_Doors_15: -110743535
-      FD_City_Doors_75: 1658745104
-      FD_City_Doors_43: 129599993
-      FD_City_Doors_30: -725663945
-      FD_City_Doors_37: -555856022
-      FD_City_Doors_83: 1138017210
-      FD_City_Doors_40: 2122245163
-      FD_City_Doors_38: 1848747528
-      FD_City_Doors_76: 1423659854
-      FD_City_Doors_88: 2011000610
       FD_City_Doors_1: -1550791977
-      FD_City_Doors_64: -256825584
-      FD_City_Doors_25: -548803503
-      FD_City_Doors_66: 1463009902
-      FD_City_Doors_58: 1511229831
-      FD_City_Doors_70: 1990248336
-      FD_City_Doors_68: -1384718769
-      FD_City_Doors_92: -1342047604
-      FD_City_Doors_50: 1728944435
-      FD_City_Doors_95: 568513946
-      FD_City_Doors_62: -42417161
-      FD_City_Doors_14: -172982399
-      FD_City_Doors_19: -694545375
-      FD_City_Doors_32: 535336215
-      FD_City_Doors_29: -1950074898
+      FD_City_Doors_10: -1453578354
+      FD_City_Doors_11: 221385501
+      FD_City_Doors_12: -281789242
       FD_City_Doors_13: -1008507200
-      FD_City_Doors_48: -451995958
-      FD_City_Doors_99: 1499883988
-      FD_City_Doors_61: -191527133
-      FD_City_Doors_46: -607394112
-      FD_City_Doors_97: 1417227040
-      FD_City_Doors_89: -1691250829
-      FD_City_Doors_94: 1532363075
-      FD_City_Doors_28: 992690609
-      FD_City_Doors_7: -2050003106
+      FD_City_Doors_14: -172982399
+      FD_City_Doors_15: -110743535
+      FD_City_Doors_16: -527437571
+      FD_City_Doors_17: 789870828
+      FD_City_Doors_18: -1066076078
+      FD_City_Doors_19: -694545375
+      FD_City_Doors_2: 2108053599
+      FD_City_Doors_20: 377786961
+      FD_City_Doors_21: -1823917279
+      FD_City_Doors_22: -1236943164
+      FD_City_Doors_23: 1189589876
       FD_City_Doors_24: -1185666138
+      FD_City_Doors_25: -548803503
+      FD_City_Doors_26: -817501779
+      FD_City_Doors_27: -1905811545
+      FD_City_Doors_28: 992690609
+      FD_City_Doors_29: -1950074898
+      FD_City_Doors_3: 1954882057
+      FD_City_Doors_30: -725663945
+      FD_City_Doors_31: -2126052669
+      FD_City_Doors_32: 535336215
+      FD_City_Doors_33: -1581818756
+      FD_City_Doors_34: 75729890
+      FD_City_Doors_35: -243362627
+      FD_City_Doors_36: 744301578
+      FD_City_Doors_37: -555856022
+      FD_City_Doors_38: 1848747528
+      FD_City_Doors_39: 1297983066
+      FD_City_Doors_4: 679197047
+      FD_City_Doors_40: 2122245163
+      FD_City_Doors_41: -440069520
+      FD_City_Doors_42: -1318503152
+      FD_City_Doors_43: 129599993
+      FD_City_Doors_44: 578794962
+      FD_City_Doors_45: 878019242
+      FD_City_Doors_46: -607394112
+      FD_City_Doors_47: 880219565
+      FD_City_Doors_48: -451995958
+      FD_City_Doors_49: 1901284749
+      FD_City_Doors_5: 871148413
+      FD_City_Doors_50: 1728944435
+      FD_City_Doors_51: -1266172012
+      FD_City_Doors_52: -398797549
+      FD_City_Doors_53: -1042863878
       FD_City_Doors_54: 148803051
+      FD_City_Doors_55: -1847343746
+      FD_City_Doors_56: 1228493509
+      FD_City_Doors_57: -684522769
+      FD_City_Doors_58: 1511229831
+      FD_City_Doors_59: -2089098073
+      FD_City_Doors_6: -31754029
+      FD_City_Doors_60: 199040831
+      FD_City_Doors_61: -191527133
+      FD_City_Doors_62: -42417161
+      FD_City_Doors_63: -33226381
+      FD_City_Doors_64: -256825584
       FD_City_Doors_65: -1453560574
-  spritePackingTag: 
+      FD_City_Doors_66: 1463009902
+      FD_City_Doors_67: 728806485
+      FD_City_Doors_68: -1384718769
+      FD_City_Doors_69: 2078074533
+      FD_City_Doors_7: -2050003106
+      FD_City_Doors_70: 1990248336
+      FD_City_Doors_71: 1191078986
+      FD_City_Doors_72: 528172882
+      FD_City_Doors_73: 1524200841
+      FD_City_Doors_74: -513546696
+      FD_City_Doors_75: 1658745104
+      FD_City_Doors_76: 1423659854
+      FD_City_Doors_77: -368175816
+      FD_City_Doors_78: -1693189989
+      FD_City_Doors_79: 388477683
+      FD_City_Doors_8: 43855145
+      FD_City_Doors_80: 1744057242
+      FD_City_Doors_81: -258905812
+      FD_City_Doors_82: 1848485073
+      FD_City_Doors_83: 1138017210
+      FD_City_Doors_84: -293617325
+      FD_City_Doors_85: 1657980165
+      FD_City_Doors_86: -860934861
+      FD_City_Doors_87: 781480823
+      FD_City_Doors_88: 2011000610
+      FD_City_Doors_89: -1691250829
+      FD_City_Doors_9: 613387985
+      FD_City_Doors_90: -1271364191
+      FD_City_Doors_91: -154103018
+      FD_City_Doors_92: -1342047604
+      FD_City_Doors_93: -313466816
+      FD_City_Doors_94: 1532363075
+      FD_City_Doors_95: 568513946
+      FD_City_Doors_96: -1919009316
+      FD_City_Doors_97: 1417227040
+      FD_City_Doors_98: -414679472
+      FD_City_Doors_99: 1499883988
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

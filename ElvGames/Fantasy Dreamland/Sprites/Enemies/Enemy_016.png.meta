@@ -3,7 +3,7 @@ guid: 2a29f5235f2001f4c9ec5e163b02f138
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -546,29 +553,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Enemy_016_7: 2005355556
-      Enemy_016_19: -280118432
-      Enemy_016_14: 715542996
+      Enemy_016_0: -1985281514
+      Enemy_016_1: -1044795255
       Enemy_016_10: 198111127
-      Enemy_016_6: 401161232
+      Enemy_016_11: -1819541631
+      Enemy_016_12: -1278771755
+      Enemy_016_13: 534929301
+      Enemy_016_14: 715542996
+      Enemy_016_15: 421843607
+      Enemy_016_16: 283346003
+      Enemy_016_17: -1371202765
+      Enemy_016_18: 996787467
+      Enemy_016_19: -280118432
       Enemy_016_2: -233410573
       Enemy_016_3: -322809784
-      Enemy_016_12: -1278771755
-      Enemy_016_15: 421843607
-      Enemy_016_18: 996787467
-      Enemy_016_0: -1985281514
-      Enemy_016_8: 1430905923
-      Enemy_016_1: -1044795255
-      Enemy_016_11: -1819541631
-      Enemy_016_9: -1573714358
-      Enemy_016_13: 534929301
       Enemy_016_4: 881630430
-      Enemy_016_16: 283346003
       Enemy_016_5: 1300734033
-      Enemy_016_17: -1371202765
-  spritePackingTag: 
+      Enemy_016_6: 401161232
+      Enemy_016_7: 2005355556
+      Enemy_016_8: 1430905923
+      Enemy_016_9: -1573714358
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

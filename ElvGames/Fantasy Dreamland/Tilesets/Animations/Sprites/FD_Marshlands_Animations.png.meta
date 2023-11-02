@@ -3,7 +3,7 @@ guid: f7866f504711dae4e90b6bf83998700c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -3990,193 +3997,192 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FD_Marshlands_Animations_172: -1139397939
-      FD_Marshlands_Animations_3: -853374365
-      FD_Marshlands_Animations_64: -256011706
-      FD_Marshlands_Animations_146: -1343719661
-      FD_Marshlands_Animations_49: -332852714
-      FD_Marshlands_Animations_62: 477314426
-      FD_Marshlands_Animations_19: -1137512067
-      FD_Marshlands_Animations_175: 953120642
-      FD_Marshlands_Animations_27: -1843140702
-      FD_Marshlands_Animations_151: -1606587085
-      FD_Marshlands_Animations_156: -1218002016
-      FD_Marshlands_Animations_165: 1445934091
+      FD_Marshlands_Animations_0: -1452397332
+      FD_Marshlands_Animations_1: -530461742
+      FD_Marshlands_Animations_10: -1014805457
+      FD_Marshlands_Animations_100: -543341433
+      FD_Marshlands_Animations_101: 678069690
+      FD_Marshlands_Animations_102: 1137552602
+      FD_Marshlands_Animations_103: -325392469
+      FD_Marshlands_Animations_104: 297008476
+      FD_Marshlands_Animations_105: -1512950602
+      FD_Marshlands_Animations_106: -517093224
+      FD_Marshlands_Animations_107: 372396901
       FD_Marshlands_Animations_108: 1319364620
-      FD_Marshlands_Animations_168: 501239655
+      FD_Marshlands_Animations_109: -1717231223
+      FD_Marshlands_Animations_11: -1701219483
+      FD_Marshlands_Animations_110: 844457400
+      FD_Marshlands_Animations_111: 1381778993
+      FD_Marshlands_Animations_112: 1713482077
+      FD_Marshlands_Animations_113: 1367446327
+      FD_Marshlands_Animations_114: -1712733475
+      FD_Marshlands_Animations_115: 985030474
+      FD_Marshlands_Animations_116: 1098006568
+      FD_Marshlands_Animations_117: -960103956
+      FD_Marshlands_Animations_118: -643761326
+      FD_Marshlands_Animations_119: 1209194747
+      FD_Marshlands_Animations_12: 2144905442
+      FD_Marshlands_Animations_120: -229707186
+      FD_Marshlands_Animations_121: 1443111348
+      FD_Marshlands_Animations_122: -1347628579
+      FD_Marshlands_Animations_123: 1025001440
+      FD_Marshlands_Animations_124: -1139141630
+      FD_Marshlands_Animations_125: 1474147440
+      FD_Marshlands_Animations_126: -462411958
+      FD_Marshlands_Animations_127: 601192481
+      FD_Marshlands_Animations_128: 1519548405
+      FD_Marshlands_Animations_129: 46183408
+      FD_Marshlands_Animations_13: -927536572
+      FD_Marshlands_Animations_130: 1400669985
+      FD_Marshlands_Animations_131: -1809879769
+      FD_Marshlands_Animations_132: -2083964119
+      FD_Marshlands_Animations_133: -370756794
+      FD_Marshlands_Animations_134: -1955942685
+      FD_Marshlands_Animations_135: -338229416
+      FD_Marshlands_Animations_136: -287037345
+      FD_Marshlands_Animations_137: 440560778
+      FD_Marshlands_Animations_138: 126466104
+      FD_Marshlands_Animations_139: 704713348
+      FD_Marshlands_Animations_14: -285233759
+      FD_Marshlands_Animations_140: 1916183876
+      FD_Marshlands_Animations_141: -1815960136
+      FD_Marshlands_Animations_142: 1794723240
+      FD_Marshlands_Animations_143: 752312561
+      FD_Marshlands_Animations_144: -2099136394
+      FD_Marshlands_Animations_145: 1083122556
+      FD_Marshlands_Animations_146: -1343719661
+      FD_Marshlands_Animations_147: -969766669
+      FD_Marshlands_Animations_148: 1654535269
+      FD_Marshlands_Animations_149: -189319132
+      FD_Marshlands_Animations_15: 784130414
+      FD_Marshlands_Animations_150: 847550116
+      FD_Marshlands_Animations_151: -1606587085
+      FD_Marshlands_Animations_152: 898165361
+      FD_Marshlands_Animations_153: -2019412228
+      FD_Marshlands_Animations_154: 1557324155
+      FD_Marshlands_Animations_155: 468961115
+      FD_Marshlands_Animations_156: -1218002016
+      FD_Marshlands_Animations_157: 1948386053
+      FD_Marshlands_Animations_158: -1820600348
+      FD_Marshlands_Animations_159: 2016345150
+      FD_Marshlands_Animations_16: 1768124641
+      FD_Marshlands_Animations_160: -1804549891
+      FD_Marshlands_Animations_161: -786189202
+      FD_Marshlands_Animations_162: -2020049399
       FD_Marshlands_Animations_163: -280533796
       FD_Marshlands_Animations_164: 1338811525
-      FD_Marshlands_Animations_112: 1713482077
-      FD_Marshlands_Animations_46: 1200688305
-      FD_Marshlands_Animations_116: 1098006568
-      FD_Marshlands_Animations_160: -1804549891
+      FD_Marshlands_Animations_165: 1445934091
+      FD_Marshlands_Animations_166: 875481331
       FD_Marshlands_Animations_167: -1517809461
-      FD_Marshlands_Animations_60: 1143629746
-      FD_Marshlands_Animations_88: -1518693054
-      FD_Marshlands_Animations_14: -285233759
-      FD_Marshlands_Animations_150: 847550116
-      FD_Marshlands_Animations_6: -2144289891
-      FD_Marshlands_Animations_0: -1452397332
-      FD_Marshlands_Animations_137: 440560778
-      FD_Marshlands_Animations_159: 2016345150
-      FD_Marshlands_Animations_52: -612603341
-      FD_Marshlands_Animations_179: 518303328
-      FD_Marshlands_Animations_41: 513569841
-      FD_Marshlands_Animations_79: 1656789728
-      FD_Marshlands_Animations_180: -1956416986
-      FD_Marshlands_Animations_89: 1711127868
-      FD_Marshlands_Animations_170: -1655361046
-      FD_Marshlands_Animations_77: -626355936
-      FD_Marshlands_Animations_174: -320242141
-      FD_Marshlands_Animations_136: -287037345
-      FD_Marshlands_Animations_161: -786189202
-      FD_Marshlands_Animations_63: 1748056436
-      FD_Marshlands_Animations_8: -112292207
-      FD_Marshlands_Animations_30: 1504090014
-      FD_Marshlands_Animations_80: -490969322
-      FD_Marshlands_Animations_134: -1955942685
-      FD_Marshlands_Animations_111: 1381778993
-      FD_Marshlands_Animations_141: -1815960136
-      FD_Marshlands_Animations_23: -1788158769
-      FD_Marshlands_Animations_171: 449278777
-      FD_Marshlands_Animations_140: 1916183876
-      FD_Marshlands_Animations_176: 555023913
-      FD_Marshlands_Animations_129: 46183408
-      FD_Marshlands_Animations_74: 2024964716
-      FD_Marshlands_Animations_47: -2030597177
-      FD_Marshlands_Animations_100: -543341433
+      FD_Marshlands_Animations_168: 501239655
       FD_Marshlands_Animations_169: 534320548
-      FD_Marshlands_Animations_102: 1137552602
-      FD_Marshlands_Animations_10: -1014805457
-      FD_Marshlands_Animations_29: 776419349
-      FD_Marshlands_Animations_153: -2019412228
-      FD_Marshlands_Animations_152: 898165361
-      FD_Marshlands_Animations_155: 468961115
-      FD_Marshlands_Animations_73: -439837988
-      FD_Marshlands_Animations_28: -500717432
-      FD_Marshlands_Animations_113: 1367446327
-      FD_Marshlands_Animations_44: -2005006620
-      FD_Marshlands_Animations_40: 455518940
-      FD_Marshlands_Animations_33: 606448312
-      FD_Marshlands_Animations_139: 704713348
-      FD_Marshlands_Animations_15: 784130414
-      FD_Marshlands_Animations_78: 317878872
-      FD_Marshlands_Animations_143: 752312561
-      FD_Marshlands_Animations_75: 1075568987
-      FD_Marshlands_Animations_83: 1436191830
-      FD_Marshlands_Animations_45: -1150843228
-      FD_Marshlands_Animations_5: -265158167
-      FD_Marshlands_Animations_24: 2021228785
-      FD_Marshlands_Animations_70: -801086396
-      FD_Marshlands_Animations_13: -927536572
-      FD_Marshlands_Animations_68: -1871680579
-      FD_Marshlands_Animations_82: 1959421677
-      FD_Marshlands_Animations_37: 1974816822
-      FD_Marshlands_Animations_181: -1166233138
-      FD_Marshlands_Animations_148: 1654535269
-      FD_Marshlands_Animations_22: 939993015
-      FD_Marshlands_Animations_105: -1512950602
-      FD_Marshlands_Animations_149: -189319132
-      FD_Marshlands_Animations_131: -1809879769
-      FD_Marshlands_Animations_115: 985030474
-      FD_Marshlands_Animations_127: 601192481
-      FD_Marshlands_Animations_11: -1701219483
+      FD_Marshlands_Animations_17: -442615389
+      FD_Marshlands_Animations_170: -1655361046
+      FD_Marshlands_Animations_171: 449278777
+      FD_Marshlands_Animations_172: -1139397939
+      FD_Marshlands_Animations_173: -1571033295
+      FD_Marshlands_Animations_174: -320242141
+      FD_Marshlands_Animations_175: 953120642
+      FD_Marshlands_Animations_176: 555023913
+      FD_Marshlands_Animations_177: 1014446438
       FD_Marshlands_Animations_178: -767556917
-      FD_Marshlands_Animations_36: -1269189273
-      FD_Marshlands_Animations_145: 1083122556
-      FD_Marshlands_Animations_103: -325392469
-      FD_Marshlands_Animations_130: 1400669985
-      FD_Marshlands_Animations_50: 2092926310
+      FD_Marshlands_Animations_179: 518303328
       FD_Marshlands_Animations_18: -1450712326
-      FD_Marshlands_Animations_59: -942966131
-      FD_Marshlands_Animations_94: -682351615
-      FD_Marshlands_Animations_69: -895143471
-      FD_Marshlands_Animations_32: -556753448
-      FD_Marshlands_Animations_55: -1471075930
-      FD_Marshlands_Animations_1: -530461742
-      FD_Marshlands_Animations_12: 2144905442
+      FD_Marshlands_Animations_180: -1956416986
+      FD_Marshlands_Animations_181: -1166233138
+      FD_Marshlands_Animations_182: 477121641
+      FD_Marshlands_Animations_183: -730014911
+      FD_Marshlands_Animations_19: -1137512067
+      FD_Marshlands_Animations_2: -1680869246
+      FD_Marshlands_Animations_20: 1928604698
+      FD_Marshlands_Animations_21: 666291135
+      FD_Marshlands_Animations_22: 939993015
+      FD_Marshlands_Animations_23: -1788158769
+      FD_Marshlands_Animations_24: 2021228785
+      FD_Marshlands_Animations_25: -163389327
       FD_Marshlands_Animations_26: -532244590
-      FD_Marshlands_Animations_81: 1736857838
-      FD_Marshlands_Animations_85: 1910392450
-      FD_Marshlands_Animations_106: -517093224
+      FD_Marshlands_Animations_27: -1843140702
+      FD_Marshlands_Animations_28: -500717432
+      FD_Marshlands_Animations_29: 776419349
+      FD_Marshlands_Animations_3: -853374365
+      FD_Marshlands_Animations_30: 1504090014
+      FD_Marshlands_Animations_31: 1079350293
+      FD_Marshlands_Animations_32: -556753448
+      FD_Marshlands_Animations_33: 606448312
+      FD_Marshlands_Animations_34: 1060923155
+      FD_Marshlands_Animations_35: -236297214
+      FD_Marshlands_Animations_36: -1269189273
+      FD_Marshlands_Animations_37: 1974816822
+      FD_Marshlands_Animations_38: 1719310558
+      FD_Marshlands_Animations_39: -1092320506
+      FD_Marshlands_Animations_4: 1311800303
+      FD_Marshlands_Animations_40: 455518940
+      FD_Marshlands_Animations_41: 513569841
+      FD_Marshlands_Animations_42: -2002173465
+      FD_Marshlands_Animations_43: -1962642318
+      FD_Marshlands_Animations_44: -2005006620
+      FD_Marshlands_Animations_45: -1150843228
+      FD_Marshlands_Animations_46: 1200688305
+      FD_Marshlands_Animations_47: -2030597177
+      FD_Marshlands_Animations_48: -181520500
+      FD_Marshlands_Animations_49: -332852714
+      FD_Marshlands_Animations_5: -265158167
+      FD_Marshlands_Animations_50: 2092926310
+      FD_Marshlands_Animations_51: 404829020
+      FD_Marshlands_Animations_52: -612603341
+      FD_Marshlands_Animations_53: 25615188
+      FD_Marshlands_Animations_54: -327291600
+      FD_Marshlands_Animations_55: -1471075930
+      FD_Marshlands_Animations_56: 748310290
       FD_Marshlands_Animations_57: 1133197677
+      FD_Marshlands_Animations_58: 1995592124
+      FD_Marshlands_Animations_59: -942966131
+      FD_Marshlands_Animations_6: -2144289891
+      FD_Marshlands_Animations_60: 1143629746
+      FD_Marshlands_Animations_61: -247764850
+      FD_Marshlands_Animations_62: 477314426
+      FD_Marshlands_Animations_63: 1748056436
+      FD_Marshlands_Animations_64: -256011706
+      FD_Marshlands_Animations_65: -33421963
+      FD_Marshlands_Animations_66: -1975331591
+      FD_Marshlands_Animations_67: 245563887
+      FD_Marshlands_Animations_68: -1871680579
+      FD_Marshlands_Animations_69: -895143471
+      FD_Marshlands_Animations_7: 1586149285
+      FD_Marshlands_Animations_70: -801086396
+      FD_Marshlands_Animations_71: 678174892
+      FD_Marshlands_Animations_72: 1875045789
+      FD_Marshlands_Animations_73: -439837988
+      FD_Marshlands_Animations_74: 2024964716
+      FD_Marshlands_Animations_75: 1075568987
+      FD_Marshlands_Animations_76: 990040992
+      FD_Marshlands_Animations_77: -626355936
+      FD_Marshlands_Animations_78: 317878872
+      FD_Marshlands_Animations_79: 1656789728
+      FD_Marshlands_Animations_8: -112292207
+      FD_Marshlands_Animations_80: -490969322
+      FD_Marshlands_Animations_81: 1736857838
+      FD_Marshlands_Animations_82: 1959421677
+      FD_Marshlands_Animations_83: 1436191830
+      FD_Marshlands_Animations_84: 1206438516
+      FD_Marshlands_Animations_85: 1910392450
+      FD_Marshlands_Animations_86: -198795822
+      FD_Marshlands_Animations_87: 217147389
+      FD_Marshlands_Animations_88: -1518693054
+      FD_Marshlands_Animations_89: 1711127868
+      FD_Marshlands_Animations_9: -1157561628
+      FD_Marshlands_Animations_90: -1883767714
       FD_Marshlands_Animations_91: 1996114331
       FD_Marshlands_Animations_92: -546778586
       FD_Marshlands_Animations_93: 1580373446
-      FD_Marshlands_Animations_117: -960103956
-      FD_Marshlands_Animations_9: -1157561628
-      FD_Marshlands_Animations_154: 1557324155
-      FD_Marshlands_Animations_76: 990040992
-      FD_Marshlands_Animations_122: -1347628579
-      FD_Marshlands_Animations_61: -247764850
-      FD_Marshlands_Animations_87: 217147389
-      FD_Marshlands_Animations_119: 1209194747
-      FD_Marshlands_Animations_183: -730014911
-      FD_Marshlands_Animations_118: -643761326
-      FD_Marshlands_Animations_67: 245563887
-      FD_Marshlands_Animations_90: -1883767714
-      FD_Marshlands_Animations_16: 1768124641
-      FD_Marshlands_Animations_34: 1060923155
-      FD_Marshlands_Animations_133: -370756794
-      FD_Marshlands_Animations_7: 1586149285
-      FD_Marshlands_Animations_138: 126466104
-      FD_Marshlands_Animations_101: 678069690
-      FD_Marshlands_Animations_124: -1139141630
-      FD_Marshlands_Animations_58: 1995592124
-      FD_Marshlands_Animations_72: 1875045789
-      FD_Marshlands_Animations_17: -442615389
-      FD_Marshlands_Animations_132: -2083964119
-      FD_Marshlands_Animations_120: -229707186
-      FD_Marshlands_Animations_114: -1712733475
-      FD_Marshlands_Animations_56: 748310290
-      FD_Marshlands_Animations_99: 607152452
-      FD_Marshlands_Animations_84: 1206438516
-      FD_Marshlands_Animations_104: 297008476
-      FD_Marshlands_Animations_25: -163389327
-      FD_Marshlands_Animations_31: 1079350293
-      FD_Marshlands_Animations_166: 875481331
-      FD_Marshlands_Animations_125: 1474147440
-      FD_Marshlands_Animations_21: 666291135
-      FD_Marshlands_Animations_98: -1689569813
-      FD_Marshlands_Animations_158: -1820600348
-      FD_Marshlands_Animations_157: 1948386053
-      FD_Marshlands_Animations_110: 844457400
-      FD_Marshlands_Animations_54: -327291600
-      FD_Marshlands_Animations_147: -969766669
-      FD_Marshlands_Animations_48: -181520500
-      FD_Marshlands_Animations_42: -2002173465
-      FD_Marshlands_Animations_135: -338229416
-      FD_Marshlands_Animations_107: 372396901
-      FD_Marshlands_Animations_2: -1680869246
-      FD_Marshlands_Animations_128: 1519548405
-      FD_Marshlands_Animations_86: -198795822
-      FD_Marshlands_Animations_97: -217221485
-      FD_Marshlands_Animations_126: -462411958
-      FD_Marshlands_Animations_162: -2020049399
-      FD_Marshlands_Animations_96: 214012738
-      FD_Marshlands_Animations_38: 1719310558
-      FD_Marshlands_Animations_173: -1571033295
+      FD_Marshlands_Animations_94: -682351615
       FD_Marshlands_Animations_95: -2024162277
-      FD_Marshlands_Animations_182: 477121641
-      FD_Marshlands_Animations_66: -1975331591
-      FD_Marshlands_Animations_39: -1092320506
-      FD_Marshlands_Animations_123: 1025001440
-      FD_Marshlands_Animations_43: -1962642318
-      FD_Marshlands_Animations_65: -33421963
-      FD_Marshlands_Animations_53: 25615188
-      FD_Marshlands_Animations_144: -2099136394
-      FD_Marshlands_Animations_177: 1014446438
-      FD_Marshlands_Animations_35: -236297214
-      FD_Marshlands_Animations_142: 1794723240
-      FD_Marshlands_Animations_71: 678174892
-      FD_Marshlands_Animations_20: 1928604698
-      FD_Marshlands_Animations_51: 404829020
-      FD_Marshlands_Animations_4: 1311800303
-      FD_Marshlands_Animations_109: -1717231223
-      FD_Marshlands_Animations_121: 1443111348
-  spritePackingTag: 
+      FD_Marshlands_Animations_96: 214012738
+      FD_Marshlands_Animations_97: -217221485
+      FD_Marshlands_Animations_98: -1689569813
+      FD_Marshlands_Animations_99: 607152452
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

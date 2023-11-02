@@ -3,7 +3,7 @@ guid: 2bbf98d9bd386224494ceb8acceb2b75
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1911,94 +1918,93 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FD_Forest_Grounds_81: 631178333
-      FD_Forest_Grounds_67: -544839424
-      FD_Forest_Grounds_29: -1613884219
-      FD_Forest_Grounds_46: 1615759206
-      FD_Forest_Grounds_62: 616284180
-      FD_Forest_Grounds_60: 717298693
-      FD_Forest_Grounds_68: 1293446258
-      FD_Forest_Grounds_5: 407314757
-      FD_Forest_Grounds_26: 221870692
-      FD_Forest_Grounds_71: 289439482
-      FD_Forest_Grounds_52: 799132448
-      FD_Forest_Grounds_72: 1060477187
-      FD_Forest_Grounds_73: 1938433755
-      FD_Forest_Grounds_66: 551780818
-      FD_Forest_Grounds_12: 1270768352
       FD_Forest_Grounds_0: 1463243396
-      FD_Forest_Grounds_43: 1659002253
+      FD_Forest_Grounds_1: -1880256479
+      FD_Forest_Grounds_10: -2139589476
+      FD_Forest_Grounds_11: 1052446485
+      FD_Forest_Grounds_12: 1270768352
       FD_Forest_Grounds_13: -278654368
       FD_Forest_Grounds_14: -1725386378
-      FD_Forest_Grounds_3: -2044707093
-      FD_Forest_Grounds_78: -1683820075
       FD_Forest_Grounds_15: -928995510
-      FD_Forest_Grounds_80: -169018971
       FD_Forest_Grounds_16: 1249904216
-      FD_Forest_Grounds_77: -7485637
-      FD_Forest_Grounds_57: 926767907
-      FD_Forest_Grounds_39: 544419033
-      FD_Forest_Grounds_59: 1869944724
-      FD_Forest_Grounds_31: 2098695753
-      FD_Forest_Grounds_19: -34258268
-      FD_Forest_Grounds_70: -190415754
-      FD_Forest_Grounds_74: -1426793141
-      FD_Forest_Grounds_48: 2082061155
-      FD_Forest_Grounds_2: -1153452855
-      FD_Forest_Grounds_36: 942137981
-      FD_Forest_Grounds_37: -907723918
-      FD_Forest_Grounds_42: -328287639
-      FD_Forest_Grounds_55: 208270113
-      FD_Forest_Grounds_11: 1052446485
       FD_Forest_Grounds_17: 30101872
-      FD_Forest_Grounds_69: 459276527
-      FD_Forest_Grounds_61: 301239058
+      FD_Forest_Grounds_18: -2121857646
+      FD_Forest_Grounds_19: -34258268
+      FD_Forest_Grounds_2: -1153452855
+      FD_Forest_Grounds_20: -778391239
       FD_Forest_Grounds_21: 839552706
-      FD_Forest_Grounds_41: 990752082
-      FD_Forest_Grounds_10: -2139589476
-      FD_Forest_Grounds_44: 745086832
-      FD_Forest_Grounds_47: 15887734
-      FD_Forest_Grounds_53: -2004512231
+      FD_Forest_Grounds_22: -302152958
+      FD_Forest_Grounds_23: -447972094
       FD_Forest_Grounds_24: -1254170307
-      FD_Forest_Grounds_76: -1819473255
-      FD_Forest_Grounds_58: 477200467
-      FD_Forest_Grounds_1: -1880256479
+      FD_Forest_Grounds_25: -1946965069
+      FD_Forest_Grounds_26: 221870692
+      FD_Forest_Grounds_27: 2104397153
+      FD_Forest_Grounds_28: -1164018896
+      FD_Forest_Grounds_29: -1613884219
+      FD_Forest_Grounds_3: -2044707093
+      FD_Forest_Grounds_30: -56494466
+      FD_Forest_Grounds_31: 2098695753
       FD_Forest_Grounds_32: 2017833082
       FD_Forest_Grounds_33: -467933166
-      FD_Forest_Grounds_54: 857580002
-      FD_Forest_Grounds_28: -1164018896
-      FD_Forest_Grounds_6: 986662616
-      FD_Forest_Grounds_79: -1370317781
-      FD_Forest_Grounds_50: -987961510
-      FD_Forest_Grounds_56: 920846908
-      FD_Forest_Grounds_9: -1930512858
-      FD_Forest_Grounds_18: -2121857646
-      FD_Forest_Grounds_83: 1812270144
-      FD_Forest_Grounds_22: -302152958
-      FD_Forest_Grounds_38: -384180346
-      FD_Forest_Grounds_35: 1043126849
-      FD_Forest_Grounds_8: -1838101393
-      FD_Forest_Grounds_30: -56494466
-      FD_Forest_Grounds_75: 577867459
-      FD_Forest_Grounds_49: -2004909647
       FD_Forest_Grounds_34: -1280155583
-      FD_Forest_Grounds_45: 125734221
-      FD_Forest_Grounds_64: -54370006
-      FD_Forest_Grounds_84: -2076567774
-      FD_Forest_Grounds_23: -447972094
-      FD_Forest_Grounds_7: -1551913571
-      FD_Forest_Grounds_51: 177739487
-      FD_Forest_Grounds_82: -1635287566
-      FD_Forest_Grounds_27: 2104397153
-      FD_Forest_Grounds_25: -1946965069
+      FD_Forest_Grounds_35: 1043126849
+      FD_Forest_Grounds_36: 942137981
+      FD_Forest_Grounds_37: -907723918
+      FD_Forest_Grounds_38: -384180346
+      FD_Forest_Grounds_39: 544419033
       FD_Forest_Grounds_4: -755008357
       FD_Forest_Grounds_40: -1336908864
-      FD_Forest_Grounds_65: 545186846
-      FD_Forest_Grounds_20: -778391239
+      FD_Forest_Grounds_41: 990752082
+      FD_Forest_Grounds_42: -328287639
+      FD_Forest_Grounds_43: 1659002253
+      FD_Forest_Grounds_44: 745086832
+      FD_Forest_Grounds_45: 125734221
+      FD_Forest_Grounds_46: 1615759206
+      FD_Forest_Grounds_47: 15887734
+      FD_Forest_Grounds_48: 2082061155
+      FD_Forest_Grounds_49: -2004909647
+      FD_Forest_Grounds_5: 407314757
+      FD_Forest_Grounds_50: -987961510
+      FD_Forest_Grounds_51: 177739487
+      FD_Forest_Grounds_52: 799132448
+      FD_Forest_Grounds_53: -2004512231
+      FD_Forest_Grounds_54: 857580002
+      FD_Forest_Grounds_55: 208270113
+      FD_Forest_Grounds_56: 920846908
+      FD_Forest_Grounds_57: 926767907
+      FD_Forest_Grounds_58: 477200467
+      FD_Forest_Grounds_59: 1869944724
+      FD_Forest_Grounds_6: 986662616
+      FD_Forest_Grounds_60: 717298693
+      FD_Forest_Grounds_61: 301239058
+      FD_Forest_Grounds_62: 616284180
       FD_Forest_Grounds_63: -700334014
-  spritePackingTag: 
+      FD_Forest_Grounds_64: -54370006
+      FD_Forest_Grounds_65: 545186846
+      FD_Forest_Grounds_66: 551780818
+      FD_Forest_Grounds_67: -544839424
+      FD_Forest_Grounds_68: 1293446258
+      FD_Forest_Grounds_69: 459276527
+      FD_Forest_Grounds_7: -1551913571
+      FD_Forest_Grounds_70: -190415754
+      FD_Forest_Grounds_71: 289439482
+      FD_Forest_Grounds_72: 1060477187
+      FD_Forest_Grounds_73: 1938433755
+      FD_Forest_Grounds_74: -1426793141
+      FD_Forest_Grounds_75: 577867459
+      FD_Forest_Grounds_76: -1819473255
+      FD_Forest_Grounds_77: -7485637
+      FD_Forest_Grounds_78: -1683820075
+      FD_Forest_Grounds_79: -1370317781
+      FD_Forest_Grounds_8: -1838101393
+      FD_Forest_Grounds_80: -169018971
+      FD_Forest_Grounds_81: 631178333
+      FD_Forest_Grounds_82: -1635287566
+      FD_Forest_Grounds_83: 1812270144
+      FD_Forest_Grounds_84: -2076567774
+      FD_Forest_Grounds_9: -1930512858
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

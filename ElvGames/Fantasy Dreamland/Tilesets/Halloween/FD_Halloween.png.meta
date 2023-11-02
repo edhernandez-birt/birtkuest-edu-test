@@ -3,7 +3,7 @@ guid: 4e318fbcada73dd4eae5c9538271ad19
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -4830,233 +4837,232 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FD_Halloween_75: -694017816
-      FD_Halloween_47: 1276640984
-      FD_Halloween_120: -1565994101
-      FD_Halloween_8: -1031960357
-      FD_Halloween_94: -1027422953
-      FD_Halloween_131: 980425502
-      FD_Halloween_203: 2143881956
-      FD_Halloween_110: -475049654
-      FD_Halloween_146: -1727403811
-      FD_Halloween_159: -1957692451
-      FD_Halloween_27: -28843349
-      FD_Halloween_87: -1509904104
-      FD_Halloween_105: -2001257864
-      FD_Halloween_123: 1342795707
-      FD_Halloween_217: -691589258
-      FD_Halloween_36: 210338628
-      FD_Halloween_112: -465507748
-      FD_Halloween_132: 1579523488
-      FD_Halloween_52: 1515838476
-      FD_Halloween_190: -1532446829
-      FD_Halloween_1: -1244448739
-      FD_Halloween_147: 319428909
-      FD_Halloween_21: 1533030999
-      FD_Halloween_161: -24684768
-      FD_Halloween_130: -1423353584
-      FD_Halloween_189: 1728081638
-      FD_Halloween_99: -1257648084
-      FD_Halloween_196: 1227284778
-      FD_Halloween_152: -1138549786
-      FD_Halloween_117: 1637954660
-      FD_Halloween_172: 306419494
-      FD_Halloween_179: -2020603402
-      FD_Halloween_79: 1086813744
-      FD_Halloween_39: 2095973812
-      FD_Halloween_65: -241051383
-      FD_Halloween_64: 373580863
-      FD_Halloween_30: -1650908254
-      FD_Halloween_42: -1031831035
-      FD_Halloween_121: 2127265267
-      FD_Halloween_211: 1377646640
-      FD_Halloween_3: 775406845
-      FD_Halloween_142: -282192125
-      FD_Halloween_13: 1137272315
-      FD_Halloween_160: 2079099471
-      FD_Halloween_215: 1342524360
-      FD_Halloween_5: -865331185
-      FD_Halloween_204: 2069900818
-      FD_Halloween_212: 729876274
-      FD_Halloween_104: -1264040794
-      FD_Halloween_34: -108771736
-      FD_Halloween_76: 2052334004
-      FD_Halloween_63: -71272454
-      FD_Halloween_12: -808029540
-      FD_Halloween_125: -2107723024
-      FD_Halloween_149: -1471281028
-      FD_Halloween_144: -1483666164
-      FD_Halloween_127: -748698777
-      FD_Halloween_72: -701189893
-      FD_Halloween_20: 1828841132
-      FD_Halloween_28: 794191023
-      FD_Halloween_188: 836148549
-      FD_Halloween_14: 2131376935
-      FD_Halloween_56: -852136196
-      FD_Halloween_101: -297452270
-      FD_Halloween_18: -115796679
-      FD_Halloween_45: 1617688566
-      FD_Halloween_74: -1151478451
-      FD_Halloween_26: 751640712
-      FD_Halloween_133: -1981158943
-      FD_Halloween_55: 1067229845
-      FD_Halloween_90: -2016463742
-      FD_Halloween_111: 936021365
-      FD_Halloween_96: -1788226381
-      FD_Halloween_221: -1785720892
-      FD_Halloween_85: 1466091227
-      FD_Halloween_137: -1378924890
-      FD_Halloween_35: 1647469626
-      FD_Halloween_102: -488355086
-      FD_Halloween_114: -1451992569
-      FD_Halloween_103: -1173986427
-      FD_Halloween_129: -2126950270
-      FD_Halloween_91: -1122024872
-      FD_Halloween_46: -1126115091
-      FD_Halloween_200: 292006652
-      FD_Halloween_173: 41409154
-      FD_Halloween_165: -1518905865
-      FD_Halloween_57: 1770128330
-      FD_Halloween_143: 1020319860
-      FD_Halloween_134: 171990257
-      FD_Halloween_171: -1395369348
-      FD_Halloween_155: 1910005238
-      FD_Halloween_135: -900447488
-      FD_Halloween_140: -741150490
-      FD_Halloween_9: -432582698
-      FD_Halloween_163: 1981760721
-      FD_Halloween_10: 1169050917
-      FD_Halloween_174: -841021233
-      FD_Halloween_128: 782942949
-      FD_Halloween_193: 952897084
-      FD_Halloween_89: -853632396
-      FD_Halloween_51: 36307667
-      FD_Halloween_60: 2124109086
-      FD_Halloween_139: 3526553
-      FD_Halloween_216: 837183025
-      FD_Halloween_33: 1037651962
-      FD_Halloween_208: -1906335799
-      FD_Halloween_71: 1463641941
-      FD_Halloween_40: 1636407418
-      FD_Halloween_59: 1261248004
-      FD_Halloween_148: -535252307
-      FD_Halloween_23: -1003561594
-      FD_Halloween_119: 2075037339
-      FD_Halloween_54: -1156531122
-      FD_Halloween_202: 364845481
-      FD_Halloween_93: -1293984777
-      FD_Halloween_162: -986515531
-      FD_Halloween_109: 2142385346
-      FD_Halloween_68: 1336054903
-      FD_Halloween_145: 523592774
-      FD_Halloween_53: 1284856490
-      FD_Halloween_49: 622436601
-      FD_Halloween_185: 701859556
-      FD_Halloween_176: 98935247
-      FD_Halloween_223: -2058964951
-      FD_Halloween_15: -1733992574
-      FD_Halloween_17: 672779721
-      FD_Halloween_84: -987083471
-      FD_Halloween_156: 2142920150
-      FD_Halloween_69: -1241409324
-      FD_Halloween_95: 2033427349
-      FD_Halloween_177: 534050270
-      FD_Halloween_32: 329782158
-      FD_Halloween_201: 106634310
-      FD_Halloween_83: -1215408166
-      FD_Halloween_138: -1629414166
-      FD_Halloween_167: -458233155
-      FD_Halloween_81: -1995026212
-      FD_Halloween_205: -1953568353
-      FD_Halloween_80: 1656599065
-      FD_Halloween_153: -123272809
-      FD_Halloween_220: 978939578
-      FD_Halloween_150: 19922155
-      FD_Halloween_100: -413378171
-      FD_Halloween_168: -2020000134
-      FD_Halloween_175: 819358203
-      FD_Halloween_192: -949545309
-      FD_Halloween_92: -476738211
-      FD_Halloween_195: 1905940070
-      FD_Halloween_194: 1938365380
-      FD_Halloween_22: 1650521727
-      FD_Halloween_62: 1721615642
-      FD_Halloween_77: 651551264
-      FD_Halloween_199: 338190981
-      FD_Halloween_198: -810248264
-      FD_Halloween_58: 1371299876
-      FD_Halloween_170: -1223265145
-      FD_Halloween_25: -868681833
-      FD_Halloween_7: -306966064
-      FD_Halloween_37: 1842564885
-      FD_Halloween_151: 2036490927
-      FD_Halloween_209: -1825050076
-      FD_Halloween_116: 1712911207
-      FD_Halloween_97: 2106094528
-      FD_Halloween_197: 1743349171
-      FD_Halloween_214: 1371054400
-      FD_Halloween_154: 673689487
-      FD_Halloween_16: 1722003497
       FD_Halloween_0: 1034405850
-      FD_Halloween_207: 1306856288
-      FD_Halloween_136: 869665583
-      FD_Halloween_206: -2129783343
-      FD_Halloween_210: -392329980
+      FD_Halloween_1: -1244448739
+      FD_Halloween_10: 1169050917
+      FD_Halloween_100: -413378171
+      FD_Halloween_101: -297452270
+      FD_Halloween_102: -488355086
+      FD_Halloween_103: -1173986427
+      FD_Halloween_104: -1264040794
+      FD_Halloween_105: -2001257864
       FD_Halloween_106: 505801174
-      FD_Halloween_184: 258022187
-      FD_Halloween_181: 1605335757
-      FD_Halloween_29: 265368505
-      FD_Halloween_126: -1828516006
-      FD_Halloween_50: 1163232208
-      FD_Halloween_73: 1812880258
-      FD_Halloween_19: 1366826886
-      FD_Halloween_43: -408671325
-      FD_Halloween_86: 928281266
-      FD_Halloween_157: -1872973089
-      FD_Halloween_67: 1148436973
-      FD_Halloween_113: -347196453
-      FD_Halloween_124: -117359287
-      FD_Halloween_183: 1384080728
-      FD_Halloween_31: -898640709
-      FD_Halloween_141: 1660221460
-      FD_Halloween_178: 449631265
-      FD_Halloween_6: -1214270722
-      FD_Halloween_78: 1175480245
-      FD_Halloween_24: 404911787
-      FD_Halloween_38: -137169100
-      FD_Halloween_213: 1426625274
-      FD_Halloween_61: -2113336320
-      FD_Halloween_44: -890045215
-      FD_Halloween_98: -324394731
-      FD_Halloween_180: 665496680
-      FD_Halloween_187: -2095699905
-      FD_Halloween_11: 1356523769
-      FD_Halloween_41: -720291288
-      FD_Halloween_182: 893668348
-      FD_Halloween_166: 2101517956
-      FD_Halloween_2: -562653285
-      FD_Halloween_82: 500810394
-      FD_Halloween_70: 1759606108
-      FD_Halloween_48: -1787761246
-      FD_Halloween_108: 865475970
-      FD_Halloween_158: 742508343
-      FD_Halloween_218: 2111371554
-      FD_Halloween_122: -592960788
-      FD_Halloween_88: 1827256672
-      FD_Halloween_219: 136834372
-      FD_Halloween_115: 2112195899
-      FD_Halloween_66: -1967183765
-      FD_Halloween_191: -1874437448
-      FD_Halloween_186: -1507785421
-      FD_Halloween_222: -756636081
-      FD_Halloween_118: -2015494181
-      FD_Halloween_4: 1799482508
       FD_Halloween_107: -856722976
-      FD_Halloween_169: -1462377564
+      FD_Halloween_108: 865475970
+      FD_Halloween_109: 2142385346
+      FD_Halloween_11: 1356523769
+      FD_Halloween_110: -475049654
+      FD_Halloween_111: 936021365
+      FD_Halloween_112: -465507748
+      FD_Halloween_113: -347196453
+      FD_Halloween_114: -1451992569
+      FD_Halloween_115: 2112195899
+      FD_Halloween_116: 1712911207
+      FD_Halloween_117: 1637954660
+      FD_Halloween_118: -2015494181
+      FD_Halloween_119: 2075037339
+      FD_Halloween_12: -808029540
+      FD_Halloween_120: -1565994101
+      FD_Halloween_121: 2127265267
+      FD_Halloween_122: -592960788
+      FD_Halloween_123: 1342795707
+      FD_Halloween_124: -117359287
+      FD_Halloween_125: -2107723024
+      FD_Halloween_126: -1828516006
+      FD_Halloween_127: -748698777
+      FD_Halloween_128: 782942949
+      FD_Halloween_129: -2126950270
+      FD_Halloween_13: 1137272315
+      FD_Halloween_130: -1423353584
+      FD_Halloween_131: 980425502
+      FD_Halloween_132: 1579523488
+      FD_Halloween_133: -1981158943
+      FD_Halloween_134: 171990257
+      FD_Halloween_135: -900447488
+      FD_Halloween_136: 869665583
+      FD_Halloween_137: -1378924890
+      FD_Halloween_138: -1629414166
+      FD_Halloween_139: 3526553
+      FD_Halloween_14: 2131376935
+      FD_Halloween_140: -741150490
+      FD_Halloween_141: 1660221460
+      FD_Halloween_142: -282192125
+      FD_Halloween_143: 1020319860
+      FD_Halloween_144: -1483666164
+      FD_Halloween_145: 523592774
+      FD_Halloween_146: -1727403811
+      FD_Halloween_147: 319428909
+      FD_Halloween_148: -535252307
+      FD_Halloween_149: -1471281028
+      FD_Halloween_15: -1733992574
+      FD_Halloween_150: 19922155
+      FD_Halloween_151: 2036490927
+      FD_Halloween_152: -1138549786
+      FD_Halloween_153: -123272809
+      FD_Halloween_154: 673689487
+      FD_Halloween_155: 1910005238
+      FD_Halloween_156: 2142920150
+      FD_Halloween_157: -1872973089
+      FD_Halloween_158: 742508343
+      FD_Halloween_159: -1957692451
+      FD_Halloween_16: 1722003497
+      FD_Halloween_160: 2079099471
+      FD_Halloween_161: -24684768
+      FD_Halloween_162: -986515531
+      FD_Halloween_163: 1981760721
       FD_Halloween_164: -31436317
-  spritePackingTag: 
+      FD_Halloween_165: -1518905865
+      FD_Halloween_166: 2101517956
+      FD_Halloween_167: -458233155
+      FD_Halloween_168: -2020000134
+      FD_Halloween_169: -1462377564
+      FD_Halloween_17: 672779721
+      FD_Halloween_170: -1223265145
+      FD_Halloween_171: -1395369348
+      FD_Halloween_172: 306419494
+      FD_Halloween_173: 41409154
+      FD_Halloween_174: -841021233
+      FD_Halloween_175: 819358203
+      FD_Halloween_176: 98935247
+      FD_Halloween_177: 534050270
+      FD_Halloween_178: 449631265
+      FD_Halloween_179: -2020603402
+      FD_Halloween_18: -115796679
+      FD_Halloween_180: 665496680
+      FD_Halloween_181: 1605335757
+      FD_Halloween_182: 893668348
+      FD_Halloween_183: 1384080728
+      FD_Halloween_184: 258022187
+      FD_Halloween_185: 701859556
+      FD_Halloween_186: -1507785421
+      FD_Halloween_187: -2095699905
+      FD_Halloween_188: 836148549
+      FD_Halloween_189: 1728081638
+      FD_Halloween_19: 1366826886
+      FD_Halloween_190: -1532446829
+      FD_Halloween_191: -1874437448
+      FD_Halloween_192: -949545309
+      FD_Halloween_193: 952897084
+      FD_Halloween_194: 1938365380
+      FD_Halloween_195: 1905940070
+      FD_Halloween_196: 1227284778
+      FD_Halloween_197: 1743349171
+      FD_Halloween_198: -810248264
+      FD_Halloween_199: 338190981
+      FD_Halloween_2: -562653285
+      FD_Halloween_20: 1828841132
+      FD_Halloween_200: 292006652
+      FD_Halloween_201: 106634310
+      FD_Halloween_202: 364845481
+      FD_Halloween_203: 2143881956
+      FD_Halloween_204: 2069900818
+      FD_Halloween_205: -1953568353
+      FD_Halloween_206: -2129783343
+      FD_Halloween_207: 1306856288
+      FD_Halloween_208: -1906335799
+      FD_Halloween_209: -1825050076
+      FD_Halloween_21: 1533030999
+      FD_Halloween_210: -392329980
+      FD_Halloween_211: 1377646640
+      FD_Halloween_212: 729876274
+      FD_Halloween_213: 1426625274
+      FD_Halloween_214: 1371054400
+      FD_Halloween_215: 1342524360
+      FD_Halloween_216: 837183025
+      FD_Halloween_217: -691589258
+      FD_Halloween_218: 2111371554
+      FD_Halloween_219: 136834372
+      FD_Halloween_22: 1650521727
+      FD_Halloween_220: 978939578
+      FD_Halloween_221: -1785720892
+      FD_Halloween_222: -756636081
+      FD_Halloween_223: -2058964951
+      FD_Halloween_23: -1003561594
+      FD_Halloween_24: 404911787
+      FD_Halloween_25: -868681833
+      FD_Halloween_26: 751640712
+      FD_Halloween_27: -28843349
+      FD_Halloween_28: 794191023
+      FD_Halloween_29: 265368505
+      FD_Halloween_3: 775406845
+      FD_Halloween_30: -1650908254
+      FD_Halloween_31: -898640709
+      FD_Halloween_32: 329782158
+      FD_Halloween_33: 1037651962
+      FD_Halloween_34: -108771736
+      FD_Halloween_35: 1647469626
+      FD_Halloween_36: 210338628
+      FD_Halloween_37: 1842564885
+      FD_Halloween_38: -137169100
+      FD_Halloween_39: 2095973812
+      FD_Halloween_4: 1799482508
+      FD_Halloween_40: 1636407418
+      FD_Halloween_41: -720291288
+      FD_Halloween_42: -1031831035
+      FD_Halloween_43: -408671325
+      FD_Halloween_44: -890045215
+      FD_Halloween_45: 1617688566
+      FD_Halloween_46: -1126115091
+      FD_Halloween_47: 1276640984
+      FD_Halloween_48: -1787761246
+      FD_Halloween_49: 622436601
+      FD_Halloween_5: -865331185
+      FD_Halloween_50: 1163232208
+      FD_Halloween_51: 36307667
+      FD_Halloween_52: 1515838476
+      FD_Halloween_53: 1284856490
+      FD_Halloween_54: -1156531122
+      FD_Halloween_55: 1067229845
+      FD_Halloween_56: -852136196
+      FD_Halloween_57: 1770128330
+      FD_Halloween_58: 1371299876
+      FD_Halloween_59: 1261248004
+      FD_Halloween_6: -1214270722
+      FD_Halloween_60: 2124109086
+      FD_Halloween_61: -2113336320
+      FD_Halloween_62: 1721615642
+      FD_Halloween_63: -71272454
+      FD_Halloween_64: 373580863
+      FD_Halloween_65: -241051383
+      FD_Halloween_66: -1967183765
+      FD_Halloween_67: 1148436973
+      FD_Halloween_68: 1336054903
+      FD_Halloween_69: -1241409324
+      FD_Halloween_7: -306966064
+      FD_Halloween_70: 1759606108
+      FD_Halloween_71: 1463641941
+      FD_Halloween_72: -701189893
+      FD_Halloween_73: 1812880258
+      FD_Halloween_74: -1151478451
+      FD_Halloween_75: -694017816
+      FD_Halloween_76: 2052334004
+      FD_Halloween_77: 651551264
+      FD_Halloween_78: 1175480245
+      FD_Halloween_79: 1086813744
+      FD_Halloween_8: -1031960357
+      FD_Halloween_80: 1656599065
+      FD_Halloween_81: -1995026212
+      FD_Halloween_82: 500810394
+      FD_Halloween_83: -1215408166
+      FD_Halloween_84: -987083471
+      FD_Halloween_85: 1466091227
+      FD_Halloween_86: 928281266
+      FD_Halloween_87: -1509904104
+      FD_Halloween_88: 1827256672
+      FD_Halloween_89: -853632396
+      FD_Halloween_9: -432582698
+      FD_Halloween_90: -2016463742
+      FD_Halloween_91: -1122024872
+      FD_Halloween_92: -476738211
+      FD_Halloween_93: -1293984777
+      FD_Halloween_94: -1027422953
+      FD_Halloween_95: 2033427349
+      FD_Halloween_96: -1788226381
+      FD_Halloween_97: 2106094528
+      FD_Halloween_98: -324394731
+      FD_Halloween_99: -1257648084
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
