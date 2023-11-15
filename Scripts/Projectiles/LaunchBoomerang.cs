@@ -5,35 +5,36 @@ using static UnityEngine.GraphicsBuffer;
 
 public class LaunchBoomerang : MonoBehaviour
 {
-    public GameObject proyectil = null;
-    public float tiempo = 5.0f;
+    [SerializeField] private GameObject proyectil = null;
+    [SerializeField] private float tiempo = 5.0f;
+    [SerializeField] private float proyectilSpeed = 5f;
     private float siguienteProyectil = 0f;
-    public float proyectilSpeed = 5f;
     private Animator myAnim;
     private Transform player;
- //   private bool animamacionLanzamiento = false;
 
     void Start()
     {
         siguienteProyectil = 0f;
+        //¿Cuando haya 2 players habrá que retocarlo?
         player = FindObjectOfType<PlayerController>().transform;
-
         myAnim = GetComponent<Animator>();
     }
 
     void Update()
     {
         siguienteProyectil += Time.deltaTime;
+    }
+
+    private void FixedUpdate()
+    {
         //Medio segundo antes del lanzamiento inicia la animación de lanzamiento
         if (siguienteProyectil > (tiempo - 0.5f) && !myAnim.GetBool("isLaunching"))
         {
-         //   animamacionLanzamiento = true;
             myAnim.SetBool("isLaunching", true);
             myAnim.SetFloat("moveX", (player.position.x - transform.position.x));
             myAnim.SetFloat("moveY", (player.position.y - transform.position.y));
-           // playerAnimator.SetFloat("AimMagnitude", moveInput.magnitude);
-           // playerAnimator.SetBool("Aim", Input.GetButton("Fire1"));
         }
+
         if (siguienteProyectil > tiempo)
         {
             if (player != null)
@@ -41,28 +42,21 @@ public class LaunchBoomerang : MonoBehaviour
                 Vector2 direction = (player.position - transform.position).normalized;
                 GameObject newProjectile = Instantiate(proyectil, transform.position, Quaternion.identity);
                 Rigidbody2D rb = newProjectile.GetComponent<Rigidbody2D>();
-
+                
                 if (rb != null)
                 {
                     rb.velocity = direction * proyectilSpeed;
-                   
                     newProjectile.transform.Rotate(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg);
-
+                    // Rotación sobre su propio eje se podría hacer fácilmente?
+                    //newProjectile.transform.Rotate(new Vector3(90f, 90f, 0f) * Time.deltaTime);
                 }
 
-                Object.Destroy(newProjectile,4.5f);
+                Object.Destroy(newProjectile, tiempo - 0.5f);
             }
-
-            //  disparar();
+            //Contador a 0 para volver a lanzar otro proyectil
             siguienteProyectil = 0f;
-           // animamacionLanzamiento = false;
             myAnim.SetBool("isLaunching", false);
-
         }
     }
 
-    void disparar()
-    {
-        GameObject projectileGameObject = Instantiate(proyectil, this.transform.position, transform.rotation, null);
-    }
 }

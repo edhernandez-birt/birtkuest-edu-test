@@ -28,16 +28,13 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetFloat("MoveVertical", moveY);
         playerAnimator.SetFloat("Speed", moveInput.sqrMagnitude);
 
-
-        AimAndShoot();
-
         // Vector3 aim = new Vector3(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"),0.0f);
         playerAnimator.SetFloat("AimHorizontal", moveX);
         playerAnimator.SetFloat("AimVertical", moveY);
         playerAnimator.SetFloat("AimMagnitude", moveInput.magnitude);
-        playerAnimator.SetBool("Aim", Input.GetButton("Fire1"));
+        playerAnimator.SetBool("Aim", Input.GetButtonDown("Fire1"));
 
-
+        AimAndShoot();
     }
 
     private void FixedUpdate()
@@ -50,20 +47,35 @@ public class PlayerController : MonoBehaviour
     //https://www.youtube.com/watch?v=aXtd5KFf_iE
     private void AimAndShoot()
     {
-     //   Vector3 aim = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
         Vector2 shootingDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-     //   if (aim.magnitude > 0.0f)
-     //   {
-           // aim.Normalize();
-         shootingDirection.Normalize();
-
+        if (shootingDirection.magnitude > 0.0f)
+        {
+            shootingDirection.Normalize();
+        }
             if (Input.GetButtonDown("Fire1"))
             {
-                GameObject proyectil = Instantiate(proyectilPrefab,transform.position,Quaternion.identity);
+            //Corrutina para esperar a la animación?
+            GameObject proyectil = Instantiate(proyectilPrefab,transform.position,Quaternion.identity);
                 proyectil.GetComponent<Rigidbody2D>().velocity = shootingDirection *5.0f;
                 proyectil.transform.Rotate(0,0,Mathf.Atan2(shootingDirection.y,shootingDirection.x)*Mathf.Rad2Deg);
                 Destroy(proyectil, 3.0f);
             }
-      //  }
+    }
+
+    public void LanzarDespuesDeAnimacion()
+    {
+        StartCoroutine(LanzarDespuesDeAnimacionCoroutine());
+    }
+
+    IEnumerator LanzarDespuesDeAnimacionCoroutine()
+    {
+        // Reproducir la animación
+        playerAnimator.SetTrigger("Aim");
+
+        // Esperar a que termine la duración de la animación actual
+        yield return new WaitForSeconds(0.9f);
+
+        // Lanzar el objeto
+        AimAndShoot();
     }
 }

@@ -22,6 +22,10 @@ public class LaunchFireball : MonoBehaviour
     void Update()
     {
         siguienteProyectil += Time.deltaTime;
+        
+    }
+    private void FixedUpdate()
+    {
         if (siguienteProyectil > tiempo)
         {
             if (player != null)
@@ -34,17 +38,10 @@ public class LaunchFireball : MonoBehaviour
                 {
                     rb.velocity = direction * proyectilSpeed;
                 }
-              
-                Object.Destroy(newProjectile,4.5f);
-            }
 
-            //  disparar();
+                Object.Destroy(newProjectile, tiempo-0.5f);
+            }
             siguienteProyectil = 0f;
         }
-    }
-
-    void disparar()
-    {
-        GameObject projectileGameObject = Instantiate(proyectil, this.transform.position, transform.rotation, null);
     }
 }
