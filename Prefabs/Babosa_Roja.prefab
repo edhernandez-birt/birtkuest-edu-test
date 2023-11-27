@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 3863687413159417093}
   - component: {fileID: 870396387108365817}
   - component: {fileID: 5379242877817399113}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Babosa_Roja
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 70
   m_Sprite: {fileID: 925303840, guid: 42cbec7281fd11d4e8b4155cc332fd4f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

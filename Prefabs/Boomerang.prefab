@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8026229322560078597}
   - component: {fileID: 287508278080440303}
   - component: {fileID: 565700964079797186}
-  m_Layer: 0
+  - component: {fileID: -4036064023841904316}
+  m_Layer: 9
   m_Name: Boomerang
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,3 +180,15 @@ PolygonCollider2D:
       - {x: 0.2123909, y: 0.084029675}
       - {x: -0.0006363392, y: 0.20912027}
   m_UseDelaunayMesh: 0
+--- !u!114 &-4036064023841904316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8301373898124657517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a440fa2600aac4982a95dad53dcfae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

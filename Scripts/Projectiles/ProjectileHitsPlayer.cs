@@ -1,0 +1,35 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ProyectilAlcanzaPlayer : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    // Colisión con Player
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Se ha producido un trigger con " + other.gameObject +" de "+this.gameObject);
+
+        Vidas controller = other.GetComponent<Vidas>();
+
+        if (controller != null)
+        {
+            controller.changeVidas(-1);
+            int vidas = controller.getVidas();
+            Debug.Log(vidas);
+
+        }
+
+        Destroy(this.gameObject);
+    }
+}
