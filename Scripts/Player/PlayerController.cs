@@ -5,11 +5,19 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 3f;
+    [SerializeField] private GameObject proyectilPrefab;
+
     private Rigidbody2D playerRb;
     private Vector2 moveInput;
     private Animator playerAnimator;
 
-    [SerializeField] private GameObject proyectilPrefab;
+    //Variables para controlar que solo tire proyectiles cada X segundos
+    private bool shootAllowed = true;
+    private float nextShootTime = 0f;
+
+    private float aimX = 0f;
+    private float aimY = 0f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,13 +36,28 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetFloat("MoveVertical", moveY);
         playerAnimator.SetFloat("Speed", moveInput.sqrMagnitude);
 
-        // Vector3 aim = new Vector3(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"),0.0f);
-        playerAnimator.SetFloat("AimHorizontal", moveX);
-        playerAnimator.SetFloat("AimVertical", moveY);
-        playerAnimator.SetFloat("AimMagnitude", moveInput.magnitude);
-        playerAnimator.SetBool("Aim", Input.GetButtonDown("Fire1"));
+        //Sumamos tiempo en el contador
+        nextShootTime += Time.deltaTime;
 
-        AimAndShoot();
+        //Si podemos disparar y pulsamos el botón de disparo
+        if (shootAllowed && Input.GetButtonDown("Fire1"))
+        {
+            // Damos valores para la animación de apuntado
+            playerAnimator.SetFloat("AimHorizontal", moveX);
+            aimX = moveX;
+            playerAnimator.SetFloat("AimVertical", moveY);
+            aimY = moveY;
+            // playerAnimator.SetFloat("AimMagnitude", moveInput.magnitude);
+
+            LanzarDespuesDeAnimacion();
+        }
+        //Si ha pasado más de un segundo desde el último disparo volvemos a permitir disparo
+        if (nextShootTime > 1.0f)
+        {
+            shootAllowed = true;
+        }
+
+
     }
 
     private void FixedUpdate()
@@ -45,21 +68,22 @@ public class PlayerController : MonoBehaviour
     }
 
     //https://www.youtube.com/watch?v=aXtd5KFf_iE
-    private void AimAndShoot()
+    //private void AimAndShoot()
+    private void AimAndShoot(float aimX, float aimY)
     {
-        Vector2 shootingDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        Vector2 shootingDirection = new Vector2(aimX, aimY);
         if (shootingDirection.magnitude > 0.0f)
         {
             shootingDirection.Normalize();
         }
-            if (Input.GetButtonDown("Fire1"))
-            {
-            //Corrutina para esperar a la animación?
-            GameObject proyectil = Instantiate(proyectilPrefab,transform.position,Quaternion.identity);
-                proyectil.GetComponent<Rigidbody2D>().velocity = shootingDirection *5.0f;
-                proyectil.transform.Rotate(0,0,Mathf.Atan2(shootingDirection.y,shootingDirection.x)*Mathf.Rad2Deg);
-                Destroy(proyectil, 3.0f);
-            }
+
+        //Corrutina para esperar a la animación?
+        GameObject proyectil = Instantiate(proyectilPrefab, transform.position, Quaternion.identity);
+        proyectil.GetComponent<Rigidbody2D>().velocity = shootingDirection * 5.0f;
+        proyectil.transform.Rotate(0, 0, Mathf.Atan2(shootingDirection.y, shootingDirection.x) * Mathf.Rad2Deg);
+        Destroy(proyectil, 3.0f);
+        // }
+
     }
 
     public void LanzarDespuesDeAnimacion()
@@ -70,12 +94,19 @@ public class PlayerController : MonoBehaviour
     IEnumerator LanzarDespuesDeAnimacionCoroutine()
     {
         // Reproducir la animación
-        playerAnimator.SetTrigger("Aim");
+        playerAnimator.SetBool("Aim", true);
+        //No dejamos tirar más proyectiles hasta que pase un tiempo
+        shootAllowed = false;
+        nextShootTime = 0.0f;
 
-        // Esperar a que termine la duración de la animación actual
-        yield return new WaitForSeconds(0.9f);
+        // Damos tiempo a que termine la animación de disparo
+        yield return new WaitForSeconds(0.75f);
 
-        // Lanzar el objeto
-        AimAndShoot();
+        // Lanzamos el objeto
+        AimAndShoot(aimX, aimY);
+
+        //Cancelamos la animación de apuntado
+        playerAnimator.SetBool("Aim", false);
+
     }
 }
