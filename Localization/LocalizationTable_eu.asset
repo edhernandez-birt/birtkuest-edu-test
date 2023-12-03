@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LocalizationTable_eu
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: eu
+  m_SharedData: {fileID: 11400000, guid: 2153ad2ec5e6eec4d8fcbd3b31de7e34, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 2279279964399599656
+  m_TableData:
+  - m_Id: 35536613376
+    m_Localized: Return sakatu hasteko
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6860940095488
+    m_Localized: 'Bizitzak: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43013919584256
+    m_Localized: Jolas bukaera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 525758286376960
+    m_Localized: 'Izena: {global.user}'
+    m_Metadata:
+      m_Items:
+      - rid: 2279279964399599656
+  references:
+    version: 2
+    RefIds:
+    - rid: 2279279964399599656
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00b0e5a32cde0100

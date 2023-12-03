@@ -6,14 +6,19 @@ using UnityEngine.UI;
 using TMPro; //Para TextMeshPro
 using System;
 using System.IO;
+using UnityEditor.Localization.Editor;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
+
 
 public class GameManager : MonoBehaviour
 {
     #region Atributos
     // Interfaz
-    public TextMeshProUGUI textoFin;  //Tipo texto original normal
-    //  public TMPro.TextMeshProUGUI textoVidasText;
-    public TextMeshProUGUI vidasText;
+    public TextMeshProUGUI textoFin;
+    public Image fondoFin;
+    //public TextMeshProUGUI vidasText;
+    public TextMeshProUGUI vidasNum;
     public TextMeshProUGUI puntosText;
     public TextMeshProUGUI tiempoText;
   //  public TextMeshProUGUI textoVelocidad;
@@ -21,6 +26,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI textoRecord;
   //  public Button botonReiniciar;
   //  public Button botonOtraEscena;
+
+
 
     // Configuración
     public int numVidas = 3;
@@ -35,7 +42,9 @@ public class GameManager : MonoBehaviour
   //  public AudioClip audioVictoria;
     public AudioClip audioDead;
     private AudioSource source;
+
     #endregion
+
 
     // Start is called before the first frame update
     void Start()
@@ -48,15 +57,17 @@ public class GameManager : MonoBehaviour
 
         //En el arranque quitamos mensajes de final de UI
         textoFin.enabled = false;
+        fondoFin.enabled = false;
      //   botonReiniciar.gameObject.SetActive(false);
      //   botonOtraEscena.gameObject.SetActive(false);
         //Actualizamos marcador de vidas y puntos
-        vidasText.text = "Vidas: " + numVidas;
+        vidasNum.text = "" + numVidas;
+          //Vidas.Text.text = LocalizationSettings.
         puntosText.text = "Puntos: " + puntosTotales;
 
         //Leemos record de fichero
-    //    hiscore = int.Parse(LeerRecordFichero());
-        textoRecord.text = "Record: "+hiscore.ToString();
+        hiscore = int.Parse(LeerRecordFichero());
+        textoRecord.text = "HiScore: "+hiscore.ToString();
     }
 
     // Update is called once per frame
@@ -71,7 +82,7 @@ public class GameManager : MonoBehaviour
     //Métodos para actulizar marcadores
     public void ActualizarContadorVidas(int vidas)
     {
-        vidasText.text = "Vidas: " + vidas;
+        vidasNum.text = ""+vidas;
     }
 
     public void ActualizarContadorPuntuacion(int puntos)
@@ -88,21 +99,7 @@ public class GameManager : MonoBehaviour
      tiempoText.text = "Tiempo: " + tiempo.ToString("#0");
     }
 
-  /*  public void ActualizarContadorVelocidad(float velocidad)
-    {
-        if (velocidad > 25)
-        {
-            textoVelocidad.text = "Veloc.: MAX";
-        } else if (velocidad > 0)
-        {
-            textoVelocidad.text = "Veloc.: " + velocidad.ToString("#0.0");
 
-        } else
-        {
-            textoVelocidad.text = "Acelera con \"+\"";
-        }
-    }
-  */
     /// <summary>
     /// Método para actualizar los enemigos pendientes.
     /// Se llamará cada vez que se destruya uno de ellos
@@ -129,8 +126,8 @@ public class GameManager : MonoBehaviour
         if (puntosTotales > hiscore)
         {
             hiscore = puntosTotales;
-            textoRecord.text = "Record: "+hiscore.ToString();
-            textoFin.text = textoFin.text + "\nNUEVO RECORD " + hiscore +" PUNTOS";
+            textoRecord.text = "HiScore: "+hiscore.ToString();
+            //textoFin.text = textoFin.text + "\nNUEVO RECORD " + hiscore +" PUNTOS";
             EscribirRecordFichero();
         }
     }
@@ -185,15 +182,17 @@ public class GameManager : MonoBehaviour
     /// <param name="motivo"></param>
     public void FinJuego(string motivo)
     {
-        textoFin.text = "GAME OVER";
+ 
+        //textoFin.text = "GAME OVER"; Darle una vuelta por idiomas
 
           source = GetComponent<AudioSource>();
           if (motivo == "dead")
           {
-              textoFin.text = "GAME OVER";
+            //  textoFin.text = "GAME OVER";
             //Cambio de audio
+            source.volume = 0.5f;
               source.clip = audioDead;
-              source.Play();
+              source.PlayDelayed(0.5f);
              // source.PlayOneShot(audioDead, 0.5f);
              //Eliminamos enemigos
               GameObject[] listaEnemigos = GameObject.FindGameObjectsWithTag("Enemy");
@@ -232,13 +231,14 @@ public class GameManager : MonoBehaviour
               Destroy(proyectil);
           }
 
-          textoFin.enabled = true;
-        /*
+        textoFin.enabled = true;
+        fondoFin.enabled = true;
+        
           //Comprobamos si ha habido nuevo record solo si hemos ganado
           ActualizarContadorRecord();
 
           //Siempre habilitamos el botón de reiniciar
-          botonReiniciar.gameObject.SetActive(true);*/
+          //botonReiniciar.gameObject.SetActive(true);
     }
     #endregion
 }

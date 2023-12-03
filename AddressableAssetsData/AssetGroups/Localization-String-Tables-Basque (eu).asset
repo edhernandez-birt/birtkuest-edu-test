@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-Basque (eu)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-Basque (eu)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9d0d475c760c505429a54b299a3c25ae
+  m_SerializeEntries:
+  - m_GUID: cbc863eb735abd445986ed74be9e92ce
+    m_Address: LocalizationTable_eu
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-eu
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: d72df6334e3a8d44cbf08010e378ce3b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 39110dc3adf47264caad29c0d588f564, type: 2}
+    - {fileID: 11400000, guid: 1355406b7d8b5a64a9382e7ef815023a, type: 2}

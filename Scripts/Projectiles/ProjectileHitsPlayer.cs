@@ -20,13 +20,13 @@ public class ProyectilAlcanzaPlayer : MonoBehaviour
     {
         Debug.Log("Se ha producido un trigger con " + other.gameObject +" de "+this.gameObject);
 
-        Vidas controller = other.GetComponent<Vidas>();
+        Lifes controller = other.GetComponent<Lifes>();
 
         if (controller != null)
         {
             controller.changeVidas(-1);
             int vidas = controller.getVidas();
-            Debug.Log(vidas);
+            Debug.Log("Vidas: "+vidas);
 
         }
 

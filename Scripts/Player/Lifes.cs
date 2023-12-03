@@ -3,21 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Vidas : MonoBehaviour
+public class Lifes : MonoBehaviour
 {
-    int vidas;
+    int vidasActuales;
+    int vidasMax;
     GameManager gestorJuego;
 
     public int getVidas()
     {
-        return vidas;
+        return this.vidasActuales;
     }
+
+    public void setVidas(int vidas)
+    {
+        this.vidasActuales = vidas;
+    }
+
+    public int getVidasMax()
+    {
+        return this.vidasMax;
+    }
+
+    public void setVidasMax(int vidasMax)
+    {
+        this.vidasMax = vidasMax;
+    }
+
 
     public void changeVidas(int cantidad)
     {
-        vidas += cantidad;
-        gestorJuego.ActualizarContadorVidas(vidas);
-        if (vidas == 0)
+        if ((vidasActuales + cantidad) < vidasMax)
+        {
+            vidasActuales += cantidad;
+            gestorJuego.ActualizarContadorVidas(vidasActuales);
+        }
+       
+        if (vidasActuales == 0)
         {
             Animator animator = this.GetComponent<Animator>();
             animator.SetTrigger("Dead");
@@ -30,7 +51,8 @@ public class Vidas : MonoBehaviour
     void Start()
     {
         gestorJuego = FindObjectOfType<GameManager>();
-        vidas = gestorJuego.numVidas;
+        vidasActuales = gestorJuego.numVidas;
+        vidasMax = vidasActuales;
     }
 
     // Update is called once per frame
