@@ -16,19 +16,27 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 2153ad2ec5e6eec4d8fcbd3b31de7e34
   m_Entries:
   - m_Id: 35536613376
-    m_Key: ReturnText
+    m_Key: ReturnTextKey
     m_Metadata:
       m_Items: []
   - m_Id: 6860940095488
-    m_Key: Lifes
+    m_Key: LifesKey
     m_Metadata:
       m_Items: []
   - m_Id: 43013919584256
-    m_Key: GameOver
+    m_Key: GameOverKey
     m_Metadata:
       m_Items: []
   - m_Id: 525758286376960
-    m_Key: UserUi
+    m_Key: UserUIKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 858808153124864
+    m_Key: LanguageKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 866412782792704
+    m_Key: AgainKey
     m_Metadata:
       m_Items: []
   m_Metadata:

@@ -17,7 +17,7 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 2153ad2ec5e6eec4d8fcbd3b31de7e34, type: 2}
   m_Metadata:
     m_Items:
-    - rid: 2279279964399599656
+    - rid: 2279280005156175877
   m_TableData:
   - m_Id: 35536613376
     m_Localized: Return sakatu hasteko
@@ -32,14 +32,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 525758286376960
-    m_Localized: 'Izena: {global.user}'
+    m_Localized: 'Izena:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 858808153124864
+    m_Localized: 'Hizkuntza: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 866412782792704
+    m_Localized: Return berriro jolasteko
     m_Metadata:
       m_Items:
-      - rid: 2279279964399599656
+      - rid: 2279280005156175877
   references:
     version: 2
     RefIds:
-    - rid: 2279279964399599656
+    - rid: 2279280005156175877
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00b0e5a32cde0100
+        m_Entries: 00b02572ff130300

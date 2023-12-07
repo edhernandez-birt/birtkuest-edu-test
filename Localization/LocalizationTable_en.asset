@@ -16,8 +16,7 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 2153ad2ec5e6eec4d8fcbd3b31de7e34, type: 2}
   m_Metadata:
-    m_Items:
-    - rid: 2279279964399599657
+    m_Items: []
   m_TableData:
   - m_Id: 35536613376
     m_Localized: Press Return to start
@@ -32,14 +31,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 525758286376960
-    m_Localized: 'Name: {global.user}'
+    m_Localized: 'Name:'
     m_Metadata:
-      m_Items:
-      - rid: 2279279964399599657
+      m_Items: []
+  - m_Id: 858808153124864
+    m_Localized: 'Language: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 866412782792704
+    m_Localized: Return to play again
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds:
-    - rid: 2279279964399599657
-      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
-      data:
-        m_Entries: 00b0e5a32cde0100
+    RefIds: []
