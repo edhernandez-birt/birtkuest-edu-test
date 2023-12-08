@@ -1,0 +1,39 @@
+https://sanderfrenken.github.io/Universal-LPC-Spritesheet-Character-Generator/#?
+body=Body_color_fur_tan&head=Boarman_fur_tan&legs=Pants_navy&
+clothes=Longsleeve_rose&quiver=Quiver_quiver&weapon=Normal_normal&ammo=Ammo_arrow
+
+Authors: drjamgo@hotmail.com, bluecarrot16, Benjamin K. Smith (BenCreating), Evert, Eliza Wyatt (ElizaWy), TheraHedwig, MuffinElZangano, Durrani, Johannes Sj?lund (wulax), Stephen Challener (Redshrike), Daniel Eddeland (daneeklu), David Conway Jr. (JaidynReiman), Johannes Sjölund (wulax), Joe White, Matthew Krohn (makrohn), , pvigier
+
+- shadow/adult/shadow.png: by drjamgo@hotmail.com. License(s): CC0. 
+    - https://opengameart.org/content/shadow-for-lpc-sprite
+
+- body/bodies/male/universal/fur_tan.png: by bluecarrot16, Benjamin K. Smith (BenCreating), Evert, Eliza Wyatt (ElizaWy), TheraHedwig, MuffinElZangano, Durrani, Johannes Sj?lund (wulax), Stephen Challener (Redshrike). License(s): CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles
+    - https://opengameart.org/content/lpc-medieval-fantasy-character-sprites
+    - https://opengameart.org/content/lpc-male-jumping-animation-by-durrani
+    - https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle
+    - https://opengameart.org/content/lpc-revised-character-basics
+
+- head/heads/boarman/universal/fur_tan.png: by Benjamin K. Smith (BenCreating), Daniel Eddeland (daneeklu). License(s): CC-BY 3.0, GPL 2.0. 
+    - https://opengameart.org/content/lpc-style-farm-animals
+    - https://opengameart.org/content/lpc-wild-boar
+    - https://opengameart.org/content/lpc-boarman
+
+- torso/clothes/longsleeve/male/rose.png: by David Conway Jr. (JaidynReiman), Johannes Sjölund (wulax). License(s): CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/lpc-medieval-fantasy-character-sprites
+    - http://opengameart.org/content/lpc-clothing-updates
+
+- legs/pants/male/navy.png: by bluecarrot16, David Conway Jr. (JaidynReiman), Joe White, Matthew Krohn (makrohn), Johannes Sjölund (wulax). License(s): CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles
+    - https://opengameart.org/content/lpc-medieval-fantasy-character-sprites
+
+- quiver/quiver.png: by Johannes Sjölund (wulax). License(s): CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/lpc-medieval-fantasy-character-sprites
+
+- weapon/ranged/bow/normal/normal.png: by . License(s): . !MISSING LICENSE INFORMATION! PLEASE CORRECT MANUALY AND REPORT BACK VIA A GITHUB ISSUE
+
+- weapon/ranged/bow/normal/walk/background/normal.png: by Johannes Sjölund (wulax), pvigier. License(s): CC-BY-SA 3.0, GPL 3.0. 
+    - https://opengameart.org/content/lpc-medieval-fantasy-character-sprites
+    - https://opengameart.org/content/lpc-walk-animations-for-bows
+
+- weapon/ranged/bow/normal/walk/foreground/normal.png: by . License(s): . !MISSING LICENSE INFORMATION! PLEASE CORRECT MANUALY AND REPORT BACK VIA A GITHUB ISSUE

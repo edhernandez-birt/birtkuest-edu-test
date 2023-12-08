@@ -9,7 +9,7 @@ using System.IO;
 using UnityEditor.Localization.Editor;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Tables;
-
+using Unity.Netcode;
 
 public class GameManager : MonoBehaviour
 {
@@ -49,15 +49,16 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Contamos enemigos
-       // GameObject[] listaEnemigos = GameObject.FindGameObjectsWithTag("Enemy");
-        //Sumamos uno porque el método de actualizar resta uno siempre
+        //Modo 1 jugador forzado desde "online" 
+        //NetworkManager.Singleton.StartHost();
+       
+        //Contador enemigos eliminados
         enemigosEliminados = 0;
-       // ActualizarContadorEnemigos();
 
         //En el arranque quitamos mensajes de final de UI
         textoFin.enabled = false;
         fondoFin.enabled = false;
+
      //   botonReiniciar.gameObject.SetActive(false);
      //   botonOtraEscena.gameObject.SetActive(false);
         //Actualizamos marcador de vidas y puntos
