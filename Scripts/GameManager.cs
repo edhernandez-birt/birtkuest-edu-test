@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
   //  public TextMeshProUGUI textoVelocidad;
     public TextMeshProUGUI textoEnemigos;
     public TextMeshProUGUI textoRecord;
+    public TextMeshProUGUI userText;
   //  public Button botonReiniciar;
   //  public Button botonOtraEscena;
 
@@ -54,12 +55,13 @@ public class GameManager : MonoBehaviour
        
         //Contador enemigos eliminados
         enemigosEliminados = 0;
-
+        userText.text = PlayerPrefs.GetString("player1name");
         //En el arranque quitamos mensajes de final de UI
         //textoFin.enabled = false;
         //fondoFin.enabled = false;
 
         //Aplicamos tag signs a esos componentes UI
+        
 
         GameObject[] signList = GameObject.FindGameObjectsWithTag("Signs");
         foreach (GameObject sign in signList)

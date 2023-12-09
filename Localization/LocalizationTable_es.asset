@@ -50,6 +50,38 @@ MonoBehaviour:
     m_Localized: Altar de espadas
     m_Metadata:
       m_Items: []
+  - m_Id: 2536532647194624
+    m_Localized: 1 jugador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2536566956601344
+    m_Localized: 2 jugadores p. partida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2536604239769600
+    m_Localized: 2 jugadores en red
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2539434623217664
+    m_Localized: Modos de juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2544067659804672
+    m_Localized: Config. de red
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2544204977123328
+    m_Localized: "Estad\xEDsticas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2555577551400960
+    m_Localized: Nombre jugador 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2562107524886528
+    m_Localized: En desarrollo
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

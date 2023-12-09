@@ -47,6 +47,40 @@ MonoBehaviour:
     m_Key: HomeRightKey
     m_Metadata:
       m_Items: []
+  - m_Id: 2536532647194624
+    m_Key: OnePlayerKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2536566956601344
+    m_Key: TwoPlayerSplitKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2536604239769600
+    m_Key: 'TwoPlayerOnlineKey
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2539434623217664
+    m_Key: GameModeKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2544067659804672
+    m_Key: NeworkConfigKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2544204977123328
+    m_Key: StatsKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2555577551400960
+    m_Key: NamePlaceholderKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2562107524886528
+    m_Key: WorkInProgressKey
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

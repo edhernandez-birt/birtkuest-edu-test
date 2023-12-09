@@ -52,6 +52,38 @@ MonoBehaviour:
     m_Localized: Ezpaten aldarea
     m_Metadata:
       m_Items: []
+  - m_Id: 2536532647194624
+    m_Localized: Jokalari 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2536566956601344
+    m_Localized: 2 jokalari zatika
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2536604239769600
+    m_Localized: 2 jokalari sarean
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2539434623217664
+    m_Localized: Jolas moduak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2544067659804672
+    m_Localized: Sarea konf.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2544204977123328
+    m_Localized: Estadistikak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2555577551400960
+    m_Localized: Jokalari 1 izena...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2562107524886528
+    m_Localized: Lanean gaude
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
