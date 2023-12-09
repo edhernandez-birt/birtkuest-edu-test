@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9055119824539193290}
   - component: {fileID: 2587827054792048288}
   m_Layer: 9
-  m_Name: FireBluePF
+  m_Name: Ball
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.6064148, y: -7.048294, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 70
-  m_Sprite: {fileID: 4530534, guid: 6e9bf1dcf33abd74ba7efa3411d70cab, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 1368437045, guid: c5961f3600310be41a94fffb565ee29a, type: 3}
+  m_Color: {r: 0.8301887, g: 0.01624447, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

@@ -170,7 +170,7 @@ public class PlayerControllerGirl : MonoBehaviour
     private void HandleMove(Vector2 movementInput)
     {
         previousMovementInput = movementInput;
-        if (movementInput.magnitude > 0.1)
+        if (movementInput.magnitude > 0.1 && myAnimator!=null)
         {
             LastDirection = movementInput;
             Vector2 moveInput = movementInput.normalized;

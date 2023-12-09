@@ -16,7 +16,7 @@ public class LaunchFireball : MonoBehaviour
     void Start()
     {
         siguienteProyectil = 0f;
-        player = FindObjectOfType<PlayerController>().transform;
+        player = FindObjectOfType<PlayerControllerGirl>().transform;
     }
 
     void Update()

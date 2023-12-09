@@ -39,6 +39,14 @@ MonoBehaviour:
     m_Key: AgainKey
     m_Metadata:
       m_Items: []
+  - m_Id: 2274898771030016
+    m_Key: HomeLeftKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2285048709885952
+    m_Key: HomeRightKey
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

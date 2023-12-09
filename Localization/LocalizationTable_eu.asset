@@ -44,6 +44,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 2279280005156175877
+  - m_Id: 2274898771030016
+    m_Localized: Lainoaren basoa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2285048709885952
+    m_Localized: Ezpaten aldarea
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

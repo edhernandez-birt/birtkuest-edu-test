@@ -56,11 +56,29 @@ public class GameManager : MonoBehaviour
         enemigosEliminados = 0;
 
         //En el arranque quitamos mensajes de final de UI
-        textoFin.enabled = false;
-        fondoFin.enabled = false;
+        //textoFin.enabled = false;
+        //fondoFin.enabled = false;
 
-     //   botonReiniciar.gameObject.SetActive(false);
-     //   botonOtraEscena.gameObject.SetActive(false);
+        //Aplicamos tag signs a esos componentes UI
+
+        GameObject[] signList = GameObject.FindGameObjectsWithTag("Signs");
+        foreach (GameObject sign in signList)
+        {
+            if(sign.GetComponent<Image>() != null)
+            {
+                Image signImage = sign.GetComponent<Image>();
+                signImage.enabled = false;
+            } else if (sign.GetComponent<TextMeshProUGUI>() != null)
+            {
+               TextMeshProUGUI signText = sign.GetComponent <TextMeshProUGUI>();
+               signText.enabled = false;
+            }
+            
+        }
+
+
+        //   botonReiniciar.gameObject.SetActive(false);
+        //   botonOtraEscena.gameObject.SetActive(false);
         //Actualizamos marcador de vidas y puntos
         vidasNum.text = "" + numVidas;
           //Vidas.Text.text = LocalizationSettings.

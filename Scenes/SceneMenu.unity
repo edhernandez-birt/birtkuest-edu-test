@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &107622793
 RectTransform:
   m_ObjectHideFlags: 0
@@ -561,7 +561,7 @@ GameObject:
   - component: {fileID: 396241569}
   - component: {fileID: 396241568}
   m_Layer: 5
-  m_Name: IntroCanvas
+  m_Name: MenuUICanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -799,7 +799,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &564201918
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1222,7 +1222,7 @@ GameObject:
   - component: {fileID: 1010140944}
   - component: {fileID: 1010140943}
   m_Layer: 5
-  m_Name: Image
+  m_Name: GeneralBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1408,7 +1408,7 @@ GameObject:
   - component: {fileID: 1472574577}
   - component: {fileID: 1472574576}
   m_Layer: 5
-  m_Name: FondoLogo
+  m_Name: LogoBakground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1929,7 +1929,7 @@ GameObject:
   - component: {fileID: 1962080138}
   - component: {fileID: 1962080137}
   m_Layer: 0
-  m_Name: IntroMusic
+  m_Name: MenuMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
