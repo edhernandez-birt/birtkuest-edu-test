@@ -7,12 +7,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     [Tooltip("Páginas en la interfaz")]
-    public List<GameObject> pages;
-    public AudioSource sonidoFondo;
-
- //   [SerializeField] Image userInputBackground;
-
-    private int pause = 0;
+    [SerializeField] private List<GameObject> pages;
 
     private string player1;
 
@@ -25,56 +20,25 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            pausar();
-            Debug.Log("Escena en pausa");
-        }
-
         if (Input.GetKey(KeyCode.Return) && player1==null)
-        {
-            GoToPage(1);
-     //       userInputBackground.enabled = true;
+        {            
             //Pedir nombre jugador 1
+            GoToPage(1);
         }else if (Input.GetKey(KeyCode.Return) && player1!=null)
         {
             GoToPage(2);
         }
     }
 
-    // Congela la partida modificando el valor de Time.timeScale a 0
-    public void pausar()
-    {
-        Time.timeScale = 0;
-        pages[pause].SetActive(true);
-    }
-
-    // Descongela la partida modificando el valor de Time.timeScale a 1
-    public void Reanudar()
-    {
-        Time.timeScale = 1;
-        pages[pause].SetActive(false);
-    }
-
-
-    // Cambia la configuración del sonido y la guarda en local
-    //public void CambiarSonido()
-    //{
-    //    sonido = -sonido;
-    //    sonidoFondo.enabled = !sonidoFondo.enabled;
-    //    PlayerPrefs.SetInt("sonido", sonido);
-    //}
-
     public void LoadLevelByName(string nombre)
     {
-        Time.timeScale = 1;         // Para que no se quede en pause
         SceneManager.LoadScene(nombre);
     }
 
     public void QuitGame()
     {
 #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
+        UnityEditor.EditorApplication.isPlaying = true;
 #else
         Application.Quit();
 #endif

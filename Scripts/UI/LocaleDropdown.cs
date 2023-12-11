@@ -21,7 +21,16 @@ public class LocaleDropdown : MonoBehaviour
             var locale = LocalizationSettings.AvailableLocales.Locales[i];
             if (LocalizationSettings.SelectedLocale == locale)
                 selected = i;
-            options.Add(new Dropdown.OptionData(locale.name));
+            //Adaptamos a nuestros 3 idiomas
+            if (locale.name.ToUpperInvariant().Equals("SPANISH (ES)"))
+                options.Add(new Dropdown.OptionData("ESPAÑOL"));
+            else if (locale.name.ToUpperInvariant().Equals("BASQUE (EU)"))
+                options.Add(new Dropdown.OptionData("EUSKARA"));
+            else if (locale.name.ToUpperInvariant().Equals("ENGLISH (EN)"))
+                options.Add(new Dropdown.OptionData("ENGLISH"));
+            //Fin de adaptación
+            else
+            options.Add(new Dropdown.OptionData(locale.name.ToUpperInvariant()));
         }
         dropdown.options = options;
 

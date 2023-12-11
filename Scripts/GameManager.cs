@@ -6,9 +6,6 @@ using UnityEngine.UI;
 using TMPro; //Para TextMeshPro
 using System;
 using System.IO;
-using UnityEditor.Localization.Editor;
-using UnityEngine.Localization;
-using UnityEngine.Localization.Tables;
 using Unity.Netcode;
 
 public class GameManager : MonoBehaviour
