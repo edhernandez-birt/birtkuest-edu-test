@@ -22,10 +22,10 @@ public class NextScene : MonoBehaviour
     {
         Debug.Log("Se ha producido un trigger con " + other.gameObject + " de " + this.gameObject);
 
-        PlayerController playerController = other.GetComponent<PlayerController>();
+        PlayerControllerGirl playerControllerGirl = other.GetComponent<PlayerControllerGirl>();
 
         //Se pueden añadir más condiciones para que pase a la siguiente pantalla
-        if (playerController != null)
+        if (playerControllerGirl != null)
         {
             SceneManager.LoadScene(sceneName);
             Destroy(this.gameObject);

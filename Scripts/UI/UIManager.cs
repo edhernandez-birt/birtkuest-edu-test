@@ -1,13 +1,13 @@
-using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     [Tooltip("Páginas en la interfaz")]
     [SerializeField] private List<GameObject> pages;
+    [SerializeField] private TextMeshProUGUI textoStats;
 
     private string player1;
 
@@ -20,11 +20,12 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Return) && player1==null)
-        {            
+        if (Input.GetKey(KeyCode.Return) && player1 == null)
+        {
             //Pedir nombre jugador 1
             GoToPage(1);
-        }else if (Input.GetKey(KeyCode.Return) && player1!=null)
+        }
+        else if (Input.GetKey(KeyCode.Return) && player1 != null)
         {
             GoToPage(2);
         }
@@ -38,7 +39,7 @@ public class UIManager : MonoBehaviour
     public void QuitGame()
     {
 #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = true;
+        UnityEditor.EditorApplication.isPlaying = false;
 #else
         Application.Quit();
 #endif
@@ -61,5 +62,10 @@ public class UIManager : MonoBehaviour
         player1 = input;
         PlayerPrefs.SetString("player1name", player1);
         Debug.Log(player1);
+    }
+
+    public void CargarListaPartidas()
+    {
+        textoStats.text = LeerPartidas.TopPlayersLoad();    
     }
 }

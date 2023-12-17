@@ -82,6 +82,18 @@ MonoBehaviour:
     m_Localized: En desarrollo
     m_Metadata:
       m_Items: []
+  - m_Id: 5426054833725440
+    m_Localized: Mejores 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5426272585211904
+    m_Localized: JUGADOR  PUNTOS  ENEMIGOS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5429639181066240
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

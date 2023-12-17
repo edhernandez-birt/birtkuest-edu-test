@@ -20,7 +20,7 @@ public class SceneChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   //Carga una escena con un nombre al pulsar enter
-        if (Input.GetKey(KeyCode.Return))
+        if (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Return))
         {
             SceneLoad(sceneName);
         }

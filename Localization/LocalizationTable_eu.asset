@@ -84,6 +84,18 @@ MonoBehaviour:
     m_Localized: Lanean gaude
     m_Metadata:
       m_Items: []
+  - m_Id: 5426054833725440
+    m_Localized: 5 onenak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5426272585211904
+    m_Localized: JOKALARI   PUNTUAK   ETSAIAK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5429639181066240
+    m_Localized: Irten
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
