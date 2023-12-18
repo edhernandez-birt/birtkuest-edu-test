@@ -94,6 +94,24 @@ MonoBehaviour:
     m_Localized: Salir
     m_Metadata:
       m_Items: []
+  - m_Id: 5949837130706944
+    m_Localized: "\xBFQu\xE9 hago aqu\xED? \xBFEs esta mi casa? Ha pasado algo raro
+      y no s\xE9 porqu\xE9 estoy en este bosque con tantos enemigos..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5950722632167424
+    m_Localized: Desierto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5950826814484480
+    m_Localized: Lago
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5954362067496960
+    m_Localized: "\xBFQu\xE9 ha pasado? Me he quedado sopa y en media hora se acaba
+      el plazo de hacer la entrega en Moodle. \xA1Socorro!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

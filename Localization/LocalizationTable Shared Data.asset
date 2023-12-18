@@ -93,6 +93,22 @@ MonoBehaviour:
     m_Key: ExitKey
     m_Metadata:
       m_Items: []
+  - m_Id: 5949837130706944
+    m_Key: HistoryKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5950722632167424
+    m_Key: DesertKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5950826814484480
+    m_Key: LakeKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5954362067496960
+    m_Key: EndingKey
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class NextScene : MonoBehaviour
 {
     [SerializeField] private string sceneName;
+    GameManager gestorJuego;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,7 @@ public class NextScene : MonoBehaviour
         //Se pueden añadir más condiciones para que pase a la siguiente pantalla
         if (playerControllerGirl != null)
         {
+            GuardarPartida.GuardarDatosPartida();
             SceneManager.LoadScene(sceneName);
             Destroy(this.gameObject);
         }

@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     private int enemigosEliminados = 0; //Enemigos eliminados 0 al inicio
     private int hiscore = 500; //Record inicial por si no hay fichero
     private static string rutaFichero = @".\Record.txt";
-    private static string rutaBBDD = @".\BBDD.txt";
+    //private static string rutaBBDD = @".\BBDD.txt";
     //Audio 
     //  public AudioClip audioVictoria;
     [Header("Audio")]
@@ -43,7 +43,8 @@ public class GameManager : MonoBehaviour
     private AudioSource source;
 
     #endregion
-
+    public int PuntosTotales { get => puntosTotales; set => puntosTotales = value; }
+    public int EnemigosEliminados { get => enemigosEliminados; set => enemigosEliminados = value; }
 
     // Start is called before the first frame update
     void Start()
@@ -120,6 +121,8 @@ public class GameManager : MonoBehaviour
     {
         puntosTotales += puntos;
         puntosText.text = "Puntos: " + puntosTotales;
+        PlayerPrefs.SetInt("totalPoints", puntosTotales);
+
     }
 
     private void ActualizarContadorTiempo()
@@ -139,6 +142,8 @@ public class GameManager : MonoBehaviour
     {
         //Contamos un enemigo eliminado
         enemigosEliminados += 1;
+        PlayerPrefs.SetInt("totalEnemies", enemigosEliminados);
+
 
         if (enemigosEliminados <= 3)
         {
@@ -154,21 +159,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void GuardarDatosPartida()
-    {
-        try
-        {
-            File.AppendAllText(rutaBBDD,
-            PlayerPrefs.GetString("player1name") + ";" +
-            puntosTotales.ToString() + ";" +
-            enemigosEliminados.ToString()+
-            Environment.NewLine);
-        }
-        catch (Exception e)
-        {
-            Debug.Log("Error al guardar datos partida: " + e.Message);
-        }
-    }
+    //private void GuardarDatosPartida()
+    //{
+    //    try
+    //    {
+    //        File.AppendAllText(rutaBBDD,
+    //        PlayerPrefs.GetString("player1name") + ";" +
+    //        puntosTotales.ToString() + ";" +
+    //        enemigosEliminados.ToString()+
+    //        Environment.NewLine);
+    //    }
+    //    catch (Exception e)
+    //    {
+    //        Debug.Log("Error al guardar datos partida: " + e.Message);
+    //    }
+    //}
   //  private List<Partida> CargarDatos()
   
     private void ActualizarContadorRecord()
@@ -290,7 +295,7 @@ public class GameManager : MonoBehaviour
         ActualizarContadorRecord();
 
         //Guardamos datos de la partida
-        GuardarDatosPartida();
+        GuardarPartida.GuardarDatosPartida();
 
         //Siempre habilitamos el botón de reiniciar
         //botonReiniciar.gameObject.SetActive(true);

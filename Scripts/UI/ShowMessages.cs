@@ -73,14 +73,15 @@ public class ShowMessages : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Se ha producido una colision con " + this.gameObject);
-
+        // Cuando colisiona con un objeto con tag player
+        if (collision.gameObject.CompareTag("Player"))
         {
-            messageText.enabled = true;
-            messageImage.enabled = true;
-           // EndCheck();
+            Debug.Log("Colisionó con un objeto que tiene el tag 'Player'");
+            {
+                messageText.enabled = true;
+                messageImage.enabled = true;
+            }
         }
-
     }
 
     private void OnCollisionExit2D(Collision2D collision)
