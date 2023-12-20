@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         }
 
         //En el arranque quitamos mensajes de final de UI
-        //textoFin.enabled = false;
+        textoFin.enabled = false;
         //fondoFin.enabled = false;
 
         //Aplicamos tag signs a esos componentes UI
@@ -130,7 +130,7 @@ public class GameManager : MonoBehaviour
         //https://forum.unity.com/threads/creating-a-simple-timer.328409/
         tiempo += Time.deltaTime;
         //   tiempoText.text = "Tiempo: "+tiempo.ToString("#0.0");
-        tiempoText.text = "Tiempo: " + tiempo.ToString("#0");
+        tiempoText.text = tiempo.ToString("#0");
     }
 
 
@@ -286,7 +286,7 @@ public class GameManager : MonoBehaviour
             Destroy(proyectil);
         }
 
-        //textoFin.enabled = true;
+        textoFin.enabled = true;
         //fondoFin.enabled = true;
         //botonMenu.enabled = true;
         //botonMenu.gameObject.SetActive(true);
