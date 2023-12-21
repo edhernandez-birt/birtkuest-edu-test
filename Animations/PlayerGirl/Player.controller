@@ -34,7 +34,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Aim
+    m_ConditionEvent: isLaunching
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3424566105521000569}
@@ -59,7 +59,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: Aim
+    m_ConditionEvent: isLaunching
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 0}
@@ -92,16 +92,16 @@ AnimatorStateMachine:
     m_Position: {x: 300, y: 240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3424566105521000569}
-    m_Position: {x: 430, y: 350, z: 0}
+    m_Position: {x: 300, y: 10, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -6622527496444564464}
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 180, y: 350, z: 0}
+  m_AnyStatePosition: {x: 50, y: 10, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 710, y: 360, z: 0}
+  m_ExitPosition: {x: 580, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 761434419017514494}
 --- !u!206 &-1222530712199774041
@@ -144,8 +144,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
-  m_BlendParameter: MoveHorizontal
-  m_BlendParameterY: MoveVertical
+  m_BlendParameter: moveX
+  m_BlendParameterY: moveY
   m_MinThreshold: -1
   m_MaxThreshold: 5
   m_UseAutomaticThresholds: 0
@@ -187,44 +187,38 @@ AnimatorController:
   m_Name: Player
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: MoveHorizontal
+  - m_Name: moveX
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: MoveVertical
+  - m_Name: moveY
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: Speed
+  - m_Name: aimX
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: Aim
+  - m_Name: aimY
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: isMoving
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: AimHorizontal
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: AimVertical
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: AimMagnitude
-    m_Type: 1
+  - m_Name: isLaunching
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -282,8 +276,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
-  m_BlendParameter: AimHorizontal
-  m_BlendParameterY: AimVertical
+  m_BlendParameter: aimX
+  m_BlendParameterY: aimY
   m_MinThreshold: -1
   m_MaxThreshold: 5
   m_UseAutomaticThresholds: 0
@@ -297,8 +291,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 3
-    m_ConditionEvent: Speed
+  - m_ConditionMode: 1
+    m_ConditionEvent: isMoving
     m_EventTreshold: 0.001
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -270482256781062164}
@@ -376,8 +370,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 4
-    m_ConditionEvent: Speed
+  - m_ConditionMode: 2
+    m_ConditionEvent: isMoving
     m_EventTreshold: 0.001
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 761434419017514494}

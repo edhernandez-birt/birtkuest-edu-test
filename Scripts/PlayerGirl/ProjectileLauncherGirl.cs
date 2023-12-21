@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ProjectileLauncherGirl : MonoBehaviour
 {
@@ -31,16 +32,23 @@ public class ProjectileLauncherGirl : MonoBehaviour
     {
         playerAnimator = GetComponent<Animator>();
         playerCollider = GetComponent<Collider2D>();
-
-        inputReader.PrimaryFireEvent += HandlePrimaryFire;
-
         playerControllerGirl = GetComponent<PlayerControllerGirl>();
+
+        //Player 1 New Input Style
+        if (playerControllerGirl.PlayerId == 1) { 
+            inputReader.PrimaryFireEvent += HandlePrimaryFire;
+        }
 
         previousFireTime = Time.time;
     }
 
     private void Update()
     {
+        //Player 2 Old Input Style
+        if (playerControllerGirl.PlayerId == 2)
+        {
+            HandlePrimaryFire(Input.GetKeyDown(KeyCode.K));
+        }
 
         if ((Time.time - previousFireTime > firingTime) && playerAnimator.GetBool("isLaunching"))
         {

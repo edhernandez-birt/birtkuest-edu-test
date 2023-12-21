@@ -37,6 +37,28 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "2b59183a-007f-4ac3-8cab-4857b0848a4c",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Primary Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e34e9f0a-fe34-4065-af29-96d19dae4d05",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Primary Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "WASD",
                     "id": "81900a91-2da8-4bdc-ab0f-b911ece22d56",
                     "path": "2DVector",
@@ -90,6 +112,28 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "1b617da7-ea2d-4ee1-bd80-316114fe5339",
+                    "path": "<Gamepad>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fed85456-110f-4b9d-b936-e82212293070",
+                    "path": "<Gamepad>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
@@ -101,6 +145,22 @@
             "devices": [
                 {
                     "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
                     "isOptional": false,
                     "isOR": false
                 }
