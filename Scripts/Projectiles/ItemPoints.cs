@@ -28,10 +28,21 @@ public class ItemPoints : MonoBehaviour
         // Impacto con player para que sume puntos
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Toque entre: " + other.gameObject.name + " item: "+
-               this.gameObject.name);
-            gestorJuego.ActualizarContadorPuntuacion(gestorJuego.puntosBase * multiplicadorPuntosItem);
-            //gestorJuego.UpdatePlayerType();            
+            PlayerControllerGirl playerControllerGirl = other.GetComponent<PlayerControllerGirl>();
+
+            Debug.Log("Toque entre: " + other.gameObject.name + " item: "+ this.gameObject.name);
+
+            gestorJuego.ActualizarContadorPuntuacion(gestorJuego.puntosBase * multiplicadorPuntosItem, playerControllerGirl.PlayerId);
+
+            //if (playerControllerGirl.PlayerId == 1)
+            //{
+            //    gestorJuego.ActualizarContadorPuntuacion(gestorJuego.puntosBase * multiplicadorPuntosItem, 1);
+            //}
+            //else if (playerControllerGirl.PlayerId == 2)
+            //{
+            //    gestorJuego.ActualizarContadorPuntuacion(gestorJuego.puntosBase * multiplicadorPuntosItem, 2);
+            //}
+                //gestorJuego.UpdatePlayerType();            
         }
         Destroy(this.gameObject);
     }

@@ -13,6 +13,7 @@ public class ProjectileLauncherGirl : MonoBehaviour
      private Collider2D playerCollider;
      private Animator playerAnimator;
 
+
     [Header("Settings")]
     [SerializeField] private float projectileSpeed;
     [SerializeField] private float fireRate;
@@ -22,6 +23,7 @@ public class ProjectileLauncherGirl : MonoBehaviour
 
     private bool shouldFire = false;
     private float previousFireTime = 0f;
+
 
     private void HandlePrimaryFire(bool shouldFire)
     {
@@ -47,7 +49,7 @@ public class ProjectileLauncherGirl : MonoBehaviour
         //Player 2 Old Input Style
         if (playerControllerGirl.PlayerId == 2)
         {
-            HandlePrimaryFire(Input.GetKeyDown(KeyCode.K));
+            HandlePrimaryFire(Input.GetKeyDown(KeyCode.RightShift));
         }
 
         if ((Time.time - previousFireTime > firingTime) && playerAnimator.GetBool("isLaunching"))
@@ -69,10 +71,6 @@ public class ProjectileLauncherGirl : MonoBehaviour
 
     }
         
-
-   
-
- 
     private void SpawnDummyProjectile(Vector3 spawnPos, Vector3 direction)
     {
         //Debug.Log("SpawnDummyProjectile 0");
@@ -84,6 +82,8 @@ public class ProjectileLauncherGirl : MonoBehaviour
             projectilePrefab, 
             spawnPos, 
             Quaternion.identity);
+
+        projectileInstance.name = playerControllerGirl.PlayerId+"projectile";
 
         Physics2D.IgnoreCollision(playerCollider, projectileInstance.GetComponent<Collider2D>());
 

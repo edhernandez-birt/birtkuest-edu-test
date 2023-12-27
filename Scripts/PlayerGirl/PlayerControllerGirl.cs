@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -120,6 +121,11 @@ public class PlayerControllerGirl : MonoBehaviour
             myAnimator.SetFloat("aimX", moveInput.x);
             myAnimator.SetFloat("aimY", moveInput.y);
         }
+    }
+
+    public static implicit operator PlayerControllerGirl(Collider2D v)
+    {
+        throw new NotImplementedException();
     }
 }
 

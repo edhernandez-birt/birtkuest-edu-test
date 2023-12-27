@@ -19,10 +19,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private UnityEngine.UI.Image fondoFin;
     [SerializeField] private TextMeshProUGUI vidasNum;
     [SerializeField] private TextMeshProUGUI puntosText;
+    [SerializeField] private TextMeshProUGUI puntos2Text;
     [SerializeField] private TextMeshProUGUI tiempoText;
     [SerializeField] private TextMeshProUGUI textoEnemigos;
     [SerializeField] private TextMeshProUGUI textoRecord;
     [SerializeField] private TextMeshProUGUI userText;
+    [SerializeField] private TextMeshProUGUI user2Text;
     [SerializeField] private GameObject gameOverObject;
     //  public Button botonOtraEscena;
 
@@ -31,8 +33,10 @@ public class GameManager : MonoBehaviour
     public int numVidas = 3;
     public int puntosBase = 100;
     private int puntosTotales = 0;
+    private int puntosTotales2 = 0;
     private float tiempo = 0.0f;
     private int enemigosEliminados = 0; //Enemigos eliminados 0 al inicio
+    private int enemigosEliminados2 = 0; 
     private int hiscore = 500; //Record inicial por si no hay fichero
     private static string rutaFichero = @".\Record.txt";
     //private static string rutaBBDD = @".\BBDD.txt";
@@ -45,6 +49,9 @@ public class GameManager : MonoBehaviour
     #endregion
     public int PuntosTotales { get => puntosTotales; set => puntosTotales = value; }
     public int EnemigosEliminados { get => enemigosEliminados; set => enemigosEliminados = value; }
+    public int PuntosTotales2 { get => puntosTotales2; set => puntosTotales2 = value; }
+    public int EnemigosEliminados2 { get => enemigosEliminados2; set => enemigosEliminados2 = value; }
+
 
     // Start is called before the first frame update
     void Start()
@@ -54,12 +61,22 @@ public class GameManager : MonoBehaviour
 
         //Contador enemigos eliminados
         enemigosEliminados = 0;
+
+        //Controlamos nombres jugadores
         userText.text = PlayerPrefs.GetString("player1name");
         if(userText.text == "")
         {
             Debug.Log("Pepito playing");
             userText.text = "Pepito";
             PlayerPrefs.SetString("player1name", userText.text);
+        }
+        //Solo modo split
+        user2Text.text = PlayerPrefs.GetString("player2name");
+        if (user2Text.text == "")
+        {
+            Debug.Log("Pepito2 playing");
+            userText.text = "Julito";
+            PlayerPrefs.SetString("player2name", userText.text);
         }
 
         //En el arranque quitamos mensajes de final de UI
@@ -85,16 +102,15 @@ public class GameManager : MonoBehaviour
                 UnityEngine.UI.Button signButton = sign.GetComponent<UnityEngine.UI.Button>();
                 signButton.enabled = false;
             }
-
         }
-
 
         //   botonReiniciar.gameObject.SetActive(false);
         //   botonOtraEscena.gameObject.SetActive(false);
         //Actualizamos marcador de vidas y puntos
         vidasNum.text = "" + numVidas;
         //Vidas.Text.text = LocalizationSettings.
-        puntosText.text = "Puntos: " + puntosTotales;
+        puntosText.text = "Pt. 1P: " + puntosTotales;
+        puntos2Text.text = "Pt. 2P: " + puntosTotales2;
 
         //Leemos record de fichero
         hiscore = int.Parse(LeerRecordFichero());
@@ -117,11 +133,19 @@ public class GameManager : MonoBehaviour
         vidasNum.text = "" + vidas;
     }
 
-    public void ActualizarContadorPuntuacion(int puntos)
+    public void ActualizarContadorPuntuacion(int puntos, int id)
     {
-        puntosTotales += puntos;
-        puntosText.text = "Puntos: " + puntosTotales;
-        PlayerPrefs.SetInt("totalPoints", puntosTotales);
+        if (id == 1)
+        {
+            puntosTotales += puntos;
+            puntosText.text = "Puntos: " + puntosTotales;
+            PlayerPrefs.SetInt("totalPoints", puntosTotales);
+        } else if (id ==2)
+        {
+            puntosTotales2 += puntos;
+            puntos2Text.text = "Puntos: " + puntosTotales2;
+            PlayerPrefs.SetInt("totalPoints2", puntosTotales2);
+        }
 
     }
 

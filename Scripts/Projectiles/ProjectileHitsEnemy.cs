@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class ProyectilAlcanzaEnemigo : MonoBehaviour
 {
-    //public int puntosBase = 100;  //Lo pasamos a GameManager?
     private GameManager gestorJuego;
-   // private bool impactoNaveGrande = false;
 
     // Start is called before the first frame update
     void Start()
@@ -24,24 +22,7 @@ public class ProyectilAlcanzaEnemigo : MonoBehaviour
     // Da puntuaciones diversas
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Se ha producido un trigger con " + other.gameObject);
-
-        //Impacto con NaveGrande
-     /*   if (other.gameObject.name == "NaveGrande" && !impactoNaveGrande)
-        {
-            Debug.Log("IMPACTO CON NAVE_GRANDE: " + other.gameObject.name +
-                this.gameObject.name+" "+impactoNaveGrande);
-            
-            impactoNaveGrande = true; //Para que no cuenten impactos dobles por la animación hasta que se destruye del todo
-            
-            //Animacion explosión nave enemiga
-             Animator animator = other.GetComponent<Animator>();
-             animator.SetTrigger("Impacto");
-
-            //Esta nave da puntosBase x 5
-            gestorJuego.ActualizarContadorPuntuacion(gestorJuego.puntosBase*5);
-            gestorJuego.ActualizarContadorEnemigosEliminados();
-        }*/
+        Debug.Log("Se ha producido un trigger de " + this.name + " con " + other.gameObject.name);
 
         // Impacto con resto de enemigos
         if (other.gameObject.CompareTag("Enemy"))
@@ -50,15 +31,26 @@ public class ProyectilAlcanzaEnemigo : MonoBehaviour
                this.gameObject.name);
             Destroy(other.gameObject);
             //Dan puntosBase x 2 el resto de enemigos
-            gestorJuego.ActualizarContadorPuntuacion(gestorJuego.puntosBase * 2);
-            gestorJuego.UpdatePlayerType();
+            if (this.name == "1projectile")
+                gestorJuego.ActualizarContadorPuntuacion(gestorJuego.puntosBase * 2, 1);
+            else if (this.name == "2projectile")
+            {
+                gestorJuego.ActualizarContadorPuntuacion(gestorJuego.puntosBase * 2, 2);
+            }
+            // gestorJuego.UpdatePlayerType();
         }
 
         //Impacto entre proyectiles
         else if (other.gameObject.CompareTag("Bullet"))
         {
             //Dan 1/5 de los puntosBase los proyectiles destruidos
-            gestorJuego.ActualizarContadorPuntuacion(gestorJuego.puntosBase / 5);
+            if (this.name == "1projectile")
+                gestorJuego.ActualizarContadorPuntuacion(gestorJuego.puntosBase / 5, 1);
+            else if (this.name == "2projectile")
+            {
+                gestorJuego.ActualizarContadorPuntuacion(gestorJuego.puntosBase / 5, 2);
+            }
+            //   gestorJuego.ActualizarContadorPuntuacion(gestorJuego.puntosBase / 5);
             Destroy(other.gameObject);
         }
 
@@ -66,8 +58,13 @@ public class ProyectilAlcanzaEnemigo : MonoBehaviour
         else if (other.name != "Player")
         {
             //Quitan 10% de los puntos base los disparos fallados
-            gestorJuego.ActualizarContadorPuntuacion(-gestorJuego.puntosBase/10);
-            
+            if (this.name == "1projectile")
+                gestorJuego.ActualizarContadorPuntuacion(-gestorJuego.puntosBase / 10, 1);
+            else if (this.name == "2projectile")
+            {
+                gestorJuego.ActualizarContadorPuntuacion(-gestorJuego.puntosBase / 10, 2);
+            }
+
         }
         //Siempre destruimos el proyectil
         Destroy(this.gameObject);
