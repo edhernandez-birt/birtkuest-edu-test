@@ -16,8 +16,7 @@ MonoBehaviour:
     m_Code: eu
   m_SharedData: {fileID: 11400000, guid: 2153ad2ec5e6eec4d8fcbd3b31de7e34, type: 2}
   m_Metadata:
-    m_Items:
-    - rid: 2279280005156175877
+    m_Items: []
   m_TableData:
   - m_Id: 35536613376
     m_Localized: Return sakatu hasteko
@@ -42,8 +41,7 @@ MonoBehaviour:
   - m_Id: 866412782792704
     m_Localized: Return berriro jolasteko
     m_Metadata:
-      m_Items:
-      - rid: 2279280005156175877
+      m_Items: []
   - m_Id: 2274898771030016
     m_Localized: Lainoaren basoa
     m_Metadata:
@@ -114,10 +112,14 @@ MonoBehaviour:
       epea amaitu da. Laguntza!!!
     m_Metadata:
       m_Items: []
+  - m_Id: 9215027410481152
+    m_Localized: Jokalari 2 izena...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9219016885645312
+    m_Localized: Jokalari 2
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds:
-    - rid: 2279280005156175877
-      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
-      data:
-        m_Entries: 00b02572ff130300
+    RefIds: []

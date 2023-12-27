@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textoStats;
 
     private string player1;
+    private string player2;
 
     // Start is called before the first frame update
     void Start()
@@ -70,6 +71,14 @@ public class UIManager : MonoBehaviour
         player1 = input;
         PlayerPrefs.SetString("player1name", player1);
         Debug.Log(player1);
+    }
+
+    public void ReadSecondPlayerNameInput(string input)
+    {
+        player2 = input;
+        PlayerPrefs.SetString("player2name", player2);
+        Debug.Log(player2);
+        LoadLevelByName("SceneSplit");
     }
 
     public void CargarListaPartidas()
