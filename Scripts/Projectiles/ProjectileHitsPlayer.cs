@@ -24,7 +24,7 @@ public class ProyectilAlcanzaPlayer : MonoBehaviour
 
         if (controller != null)
         {
-            controller.changeVidas(-1);
+            controller.changeVidas(-1,other.GetComponent<PlayerControllerGirl>().PlayerId);
             int vidas = controller.getVidas();
             Debug.Log("Vidas: "+vidas);
 

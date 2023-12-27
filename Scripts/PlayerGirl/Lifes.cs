@@ -30,12 +30,12 @@ public class Lifes : MonoBehaviour
     }
 
 
-    public void changeVidas(int cantidad)
+    public void changeVidas(int cantidad,int id)
     {
         if ((vidasActuales + cantidad) < vidasMax)
         {
             vidasActuales += cantidad;
-            gestorJuego.ActualizarContadorVidas(vidasActuales);
+            gestorJuego.ActualizarContadorVidas(vidasActuales,id);
         }
        
         if (vidasActuales == 0)

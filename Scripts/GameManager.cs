@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textoFin;
     [SerializeField] private UnityEngine.UI.Image fondoFin;
     [SerializeField] private TextMeshProUGUI vidasNum;
+    [SerializeField] private TextMeshProUGUI vidasNum2;
     [SerializeField] private TextMeshProUGUI puntosText;
     [SerializeField] private TextMeshProUGUI puntos2Text;
     [SerializeField] private TextMeshProUGUI tiempoText;
@@ -31,6 +32,7 @@ public class GameManager : MonoBehaviour
     [Header("Game Configuration")]
     // Configuración
     public int numVidas = 3;
+    public int numVidas2 = 3;
     public int puntosBase = 100;
     private int puntosTotales = 0;
     private int puntosTotales2 = 0;
@@ -108,6 +110,7 @@ public class GameManager : MonoBehaviour
         //   botonOtraEscena.gameObject.SetActive(false);
         //Actualizamos marcador de vidas y puntos
         vidasNum.text = "" + numVidas;
+        vidasNum2.text = "" + numVidas2;
         //Vidas.Text.text = LocalizationSettings.
         puntosText.text = "Pt. 1P: " + puntosTotales;
         puntos2Text.text = "Pt. 2P: " + puntosTotales2;
@@ -128,9 +131,18 @@ public class GameManager : MonoBehaviour
     }
     #region Actualizar marcadores
     //Métodos para actulizar marcadores
-    public void ActualizarContadorVidas(int vidas)
+    public void ActualizarContadorVidas(int vidas, int id)
     {
-        vidasNum.text = "" + vidas;
+        if (id == 1)
+        {
+            vidasNum.text = "" + vidas;
+
+        }
+        else if (id==2)
+        {
+            vidasNum2.text = "" + vidas;
+
+        }
     }
 
     public void ActualizarContadorPuntuacion(int puntos, int id)
