@@ -61,7 +61,7 @@ public class PlayerControllerGirl : MonoBehaviour
         if (playerId == 1)
         {   //New input
             inputReader.MoveEvent += HandleMove;
-        }else if (playerId == 2)
+        } else if (playerId == 2 && PlayerPrefs.GetString("gameMode")=="2P Split")
         {   //Old input
             float moveX = Input.GetAxisRaw("Horizontal");
             float moveY = Input.GetAxisRaw("Vertical");

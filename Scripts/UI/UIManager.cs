@@ -33,6 +33,14 @@ public class UIManager : MonoBehaviour
 
     public void LoadLevelByName(string nombre)
     {
+        if (nombre == "SceneEdu")
+        {
+            PlayerPrefs.SetString("gameMode", "1P");
+        }else if (nombre == "SceneSplit")
+        {
+            PlayerPrefs.SetString("gameMode", "2P Split");
+        }
+
         SceneManager.LoadScene(nombre);
     }
 

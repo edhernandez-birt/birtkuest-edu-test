@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     private int puntosTotales2 = 0;
     private float tiempo = 0.0f;
     private int enemigosEliminados = 0; //Enemigos eliminados 0 al inicio
-    private int enemigosEliminados2 = 0; 
+    private int enemigosEliminados2 = 0;
     private int hiscore = 500; //Record inicial por si no hay fichero
     private static string rutaFichero = @".\Record.txt";
     //private static string rutaBBDD = @".\BBDD.txt";
@@ -66,19 +66,22 @@ public class GameManager : MonoBehaviour
 
         //Controlamos nombres jugadores
         userText.text = PlayerPrefs.GetString("player1name");
-        if(userText.text == "")
+        if (userText.text == "")
         {
             Debug.Log("Pepito playing");
             userText.text = "Pepito";
             PlayerPrefs.SetString("player1name", userText.text);
         }
-        //Solo modo split
-        user2Text.text = PlayerPrefs.GetString("player2name");
-        if (user2Text.text == "")
+        //Solo modo split  --Controlar
+        if (PlayerPrefs.GetString("gameMode") == "2P Split")
         {
-            Debug.Log("Pepito2 playing");
-            userText.text = "Julito";
-            PlayerPrefs.SetString("player2name", userText.text);
+            user2Text.text = PlayerPrefs.GetString("player2name");
+            if (user2Text.text == "")
+            {
+                Debug.Log("Pepito2 playing");
+                userText.text = "Julito";
+                PlayerPrefs.SetString("player2name", userText.text);
+            }
         }
 
         //En el arranque quitamos mensajes de final de UI
@@ -99,7 +102,8 @@ public class GameManager : MonoBehaviour
             {
                 TextMeshProUGUI signText = sign.GetComponent<TextMeshProUGUI>();
                 signText.enabled = false;
-            }else if (sign.GetComponent<UnityEngine.UI.Button>() != null)
+            }
+            else if (sign.GetComponent<UnityEngine.UI.Button>() != null)
             {
                 UnityEngine.UI.Button signButton = sign.GetComponent<UnityEngine.UI.Button>();
                 signButton.enabled = false;
@@ -110,14 +114,21 @@ public class GameManager : MonoBehaviour
         //   botonOtraEscena.gameObject.SetActive(false);
         //Actualizamos marcador de vidas y puntos
         vidasNum.text = "" + numVidas;
-        vidasNum2.text = "" + numVidas2;
+        if (PlayerPrefs.GetString("gameMode") == "2P Split")
+            vidasNum2.text = "" + numVidas2;
         //Vidas.Text.text = LocalizationSettings.
         puntosText.text = "Pt. 1P: " + puntosTotales;
-        puntos2Text.text = "Pt. 2P: " + puntosTotales2;
+        if (PlayerPrefs.GetString("gameMode") == "2P Split")
+            puntos2Text.text = "Pt. 2P: " + puntosTotales2;
 
         //Leemos record de fichero
-        hiscore = int.Parse(LeerRecordFichero());
-        textoRecord.text = "HiScore: " + hiscore.ToString();
+        if (PlayerPrefs.GetString("gameMode") == "1P")
+        {
+            hiscore = int.Parse(LeerRecordFichero());
+            textoRecord.text = "HiScore: " + hiscore.ToString();
+        }
+
+
     }
 
     // Update is called once per frame
@@ -138,7 +149,7 @@ public class GameManager : MonoBehaviour
             vidasNum.text = "" + vidas;
 
         }
-        else if (id==2)
+        else if (id == 2)
         {
             vidasNum2.text = "" + vidas;
 
@@ -152,7 +163,8 @@ public class GameManager : MonoBehaviour
             puntosTotales += puntos;
             puntosText.text = "Puntos: " + puntosTotales;
             PlayerPrefs.SetInt("totalPoints", puntosTotales);
-        } else if (id ==2)
+        }
+        else if (id == 2)
         {
             puntosTotales2 += puntos;
             puntos2Text.text = "Puntos: " + puntosTotales2;
@@ -210,8 +222,8 @@ public class GameManager : MonoBehaviour
     //        Debug.Log("Error al guardar datos partida: " + e.Message);
     //    }
     //}
-  //  private List<Partida> CargarDatos()
-  
+    //  private List<Partida> CargarDatos()
+
     private void ActualizarContadorRecord()
     {
         if (puntosTotales > hiscore)
