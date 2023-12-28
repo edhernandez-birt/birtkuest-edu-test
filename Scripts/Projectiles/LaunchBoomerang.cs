@@ -15,8 +15,8 @@ public class LaunchBoomerang : MonoBehaviour
     void Start()
     {
         siguienteProyectil = 0f;
-        //¿Cuando haya 2 players habrá que retocarlo?
-        player = FindObjectOfType<PlayerControllerGirl>().transform;
+        //Con dos players usamos getClosestPlayer
+        //player = FindObjectOfType<PlayerControllerGirl>().transform;
         myAnim = GetComponent<Animator>();
     }
 

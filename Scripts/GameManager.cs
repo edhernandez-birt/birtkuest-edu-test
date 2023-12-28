@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
     private int puntosTotales2 = 0;
     private float tiempo = 0.0f;
     private int enemigosEliminados = 0; //Enemigos eliminados 0 al inicio
-    private int enemigosEliminados2 = 0;
+    private int enemigosEliminados2 = 0; //Pendiente
     private int hiscore = 500; //Record inicial por si no hay fichero
     private static string rutaFichero = @".\Record.txt";
     //private static string rutaBBDD = @".\BBDD.txt";
@@ -48,13 +48,15 @@ public class GameManager : MonoBehaviour
     private AudioSource source;
 
     #endregion
+
+    #region getterssetters
     public int PuntosTotales { get => puntosTotales; set => puntosTotales = value; }
     public int EnemigosEliminados { get => enemigosEliminados; set => enemigosEliminados = value; }
     public int PuntosTotales2 { get => puntosTotales2; set => puntosTotales2 = value; }
     public int EnemigosEliminados2 { get => enemigosEliminados2; set => enemigosEliminados2 = value; }
     public int NumVidas { get => numVidas; set => numVidas = value; }
     public int NumVidas2 { get => numVidas2; set => numVidas2 = value; }
-
+    #endregion
 
     // Start is called before the first frame update
     void Start()
@@ -63,7 +65,11 @@ public class GameManager : MonoBehaviour
         //NetworkManager.Singleton.StartHost();
 
         //Contador enemigos eliminados
-        enemigosEliminados = 0;
+
+        //Ponemos a cero los contadores de juego
+        PlayerPrefs.SetInt("totalPoints", 0);
+        PlayerPrefs.SetInt("totalPoints2", 0);
+        PlayerPrefs.SetInt("totalEnemies", 0);
 
         //Controlar nombre jugador 1
         userText.text = PlayerPrefs.GetString("player1name");
@@ -73,29 +79,36 @@ public class GameManager : MonoBehaviour
             userText.text = "Pepita";
             PlayerPrefs.SetString("player1name", userText.text);
         }
+        //Actualizamos marcadores 1 player
+        puntosText.text = "Pts. 1P: " + puntosTotales;
+        vidasNum.text = "" + numVidas;
+
         //Modo 2 jugadores
         if (PlayerPrefs.GetString("gameMode") == "2P Split")
         {
             //Int para controlar muerte del otro jugador
             PlayerPrefs.SetInt("playersDead", 0);
-            if(user2Text.text.Length == 0)
+
+            user2Text.text = PlayerPrefs.GetString("player2name");
+            if (user2Text.text.Length == 0)
             {
                 Debug.Log("Julita playing");
                 user2Text.text = "Julita";
-                PlayerPrefs.SetString("player2name",user2Text.text);
+                PlayerPrefs.SetString("player2name", user2Text.text);
             }
-            if (user2Text.text == "")
-            {
-                userText.text = "Julito";
-                PlayerPrefs.SetString("player2name", userText.text);
-            }
+
+            //Actualizamos marcador de vidas y puntos 2 player
+
+            puntos2Text.text = "Pts. 2P: " + puntosTotales2;
+            vidasNum2.text = "" + numVidas2;
+
         }
 
         //En el arranque quitamos mensajes de final de UI
         textoFin.enabled = false;
         //fondoFin.enabled = false;
 
-        //Aplicamos tag signs a esos componentes UI
+        //Desactivamos objetos con tag "Signs"
 
         GameObject[] signList = GameObject.FindGameObjectsWithTag("Signs");
         foreach (GameObject sign in signList)
@@ -120,9 +133,7 @@ public class GameManager : MonoBehaviour
         //   botonReiniciar.gameObject.SetActive(false);
         //   botonOtraEscena.gameObject.SetActive(false);
 
-        //Actualizamos marcadores 1 player
-        puntosText.text = "Pts. 1P: " + puntosTotales;
-        vidasNum.text = "" + numVidas;
+
 
         //Marcadores exclusivos 1 player ¿Eliminarlos?
         if (PlayerPrefs.GetString("gameMode") == "1P")
@@ -131,12 +142,6 @@ public class GameManager : MonoBehaviour
             textoRecord.text = "HiScore: " + hiscore.ToString();
         }
 
-        //Actualizamos marcador de vidas y puntos 2 player
-        if (PlayerPrefs.GetString("gameMode") == "2P Split")
-        {
-            puntos2Text.text = "Pts. 2P: " + puntosTotales2;
-            vidasNum2.text = "" + numVidas2;
-        }
     }
 
     // Update is called once per frame
@@ -169,13 +174,13 @@ public class GameManager : MonoBehaviour
         if (id == 1)
         {
             puntosTotales += puntos;
-            puntosText.text = "Puntos: " + puntosTotales;
+            puntosText.text = "Pts. 1P: " + puntosTotales;
             PlayerPrefs.SetInt("totalPoints", puntosTotales);
         }
         else if (id == 2)
         {
             puntosTotales2 += puntos;
-            puntos2Text.text = "Puntos: " + puntosTotales2;
+            puntos2Text.text = "Pts. 2P: " + puntosTotales2;
             PlayerPrefs.SetInt("totalPoints2", puntosTotales2);
         }
 

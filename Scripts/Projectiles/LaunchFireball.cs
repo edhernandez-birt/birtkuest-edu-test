@@ -16,7 +16,7 @@ public class LaunchFireball : MonoBehaviour
     void Start()
     {
         siguienteProyectil = 0f;
-        player = FindObjectOfType<PlayerControllerGirl>().transform;
+      //  player = FindObjectOfType<PlayerControllerGirl>().transform;
     }
 
     void Update()
@@ -26,6 +26,7 @@ public class LaunchFireball : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        player = getClosestPlayer();
         if (siguienteProyectil > tiempo)
         {
             if (player != null)
@@ -44,4 +45,23 @@ public class LaunchFireball : MonoBehaviour
             siguienteProyectil = 0f;
         }
     }
+    private Transform getClosestPlayer()
+    {
+        PlayerControllerGirl[] targets = FindObjectsOfType<PlayerControllerGirl>();
+        if (targets.Length == 0) { return null; }
+        if (targets.Length == 1) { return targets[0].transform; }
+        int idx = 0;
+        double distance = double.MaxValue;
+        for (int i = 0; i < targets.Length; i++)
+        {
+            double di = Vector3.Distance(transform.position, targets[i].transform.position);
+            if (di < distance)
+            {
+                distance = di;
+                idx = i;
+            }
+        }
+        return targets[idx].transform;
+    }
+
 }
