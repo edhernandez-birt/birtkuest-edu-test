@@ -24,13 +24,16 @@ public class PigController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
+        if (target != null)
         {
-            FollowPlayer();
-        }
-        else if (Vector3.Distance(target.position, transform.position) >= maxRange)
-        {
-            GoHome();
+            if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
+            {
+                FollowPlayer();
+            }
+            else if (Vector3.Distance(target.position, transform.position) >= maxRange)
+            {
+                GoHome();
+            }
         }
 
     }

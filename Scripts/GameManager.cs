@@ -30,9 +30,8 @@ public class GameManager : MonoBehaviour
     //  public Button botonOtraEscena;
 
     [Header("Game Configuration")]
-    // Configuración
-    public int numVidas = 3;
-    public int numVidas2 = 3;
+    [SerializeField] private int numVidas = 3;
+    [SerializeField] private int numVidas2 = 3;
     public int puntosBase = 100;
     private int puntosTotales = 0;
     private int puntosTotales2 = 0;
@@ -53,6 +52,8 @@ public class GameManager : MonoBehaviour
     public int EnemigosEliminados { get => enemigosEliminados; set => enemigosEliminados = value; }
     public int PuntosTotales2 { get => puntosTotales2; set => puntosTotales2 = value; }
     public int EnemigosEliminados2 { get => enemigosEliminados2; set => enemigosEliminados2 = value; }
+    public int NumVidas { get => numVidas; set => numVidas = value; }
+    public int NumVidas2 { get => numVidas2; set => numVidas2 = value; }
 
 
     // Start is called before the first frame update
@@ -72,9 +73,10 @@ public class GameManager : MonoBehaviour
             userText.text = "Pepito";
             PlayerPrefs.SetString("player1name", userText.text);
         }
-        //Solo modo split  --Controlar
         if (PlayerPrefs.GetString("gameMode") == "2P Split")
         {
+            //Int para controlar muerte del otro jugador
+            PlayerPrefs.SetInt("playersDead", 0);
             user2Text.text = PlayerPrefs.GetString("player2name");
             if (user2Text.text == "")
             {
@@ -112,21 +114,24 @@ public class GameManager : MonoBehaviour
 
         //   botonReiniciar.gameObject.SetActive(false);
         //   botonOtraEscena.gameObject.SetActive(false);
-        //Actualizamos marcador de vidas y puntos
-        vidasNum.text = "" + numVidas;
-        if (PlayerPrefs.GetString("gameMode") == "2P Split")
-            vidasNum2.text = "" + numVidas2;
-        //Vidas.Text.text = LocalizationSettings.
-        puntosText.text = "Pt. 1P: " + puntosTotales;
-        if (PlayerPrefs.GetString("gameMode") == "2P Split")
-            puntos2Text.text = "Pt. 2P: " + puntosTotales2;
 
-        //Leemos record de fichero
+        //Actualizamos marcadores 1 player
         if (PlayerPrefs.GetString("gameMode") == "1P")
         {
             hiscore = int.Parse(LeerRecordFichero());
             textoRecord.text = "HiScore: " + hiscore.ToString();
+            puntosText.text = "Pts. 1P: " + puntosTotales;
+            vidasNum.text = "" + numVidas;
         }
+
+        //Actualizamos marcador de vidas y puntos 2 player
+        if (PlayerPrefs.GetString("gameMode") == "2P Split")
+        {
+            puntos2Text.text = "Pts. 2P: " + puntosTotales2;
+            vidasNum2.text = "" + numVidas2;
+        }
+
+
 
 
     }
