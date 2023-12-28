@@ -37,7 +37,7 @@ public class ProyectilAlcanzaEnemigo : MonoBehaviour
             {
                 gestorJuego.ActualizarContadorPuntuacion(gestorJuego.puntosBase * 2, 2);
             }
-            // gestorJuego.UpdatePlayerType();
+            gestorJuego.UpdatePlayerType();
         }
 
         //Impacto entre proyectiles

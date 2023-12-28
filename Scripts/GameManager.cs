@@ -65,22 +65,27 @@ public class GameManager : MonoBehaviour
         //Contador enemigos eliminados
         enemigosEliminados = 0;
 
-        //Controlamos nombres jugadores
+        //Controlar nombre jugador 1
         userText.text = PlayerPrefs.GetString("player1name");
-        if (userText.text == "")
+        if (userText.text.Length == 0)
         {
-            Debug.Log("Pepito playing");
-            userText.text = "Pepito";
+            Debug.Log("Pepita playing");
+            userText.text = "Pepita";
             PlayerPrefs.SetString("player1name", userText.text);
         }
+        //Modo 2 jugadores
         if (PlayerPrefs.GetString("gameMode") == "2P Split")
         {
             //Int para controlar muerte del otro jugador
             PlayerPrefs.SetInt("playersDead", 0);
-            user2Text.text = PlayerPrefs.GetString("player2name");
+            if(user2Text.text.Length == 0)
+            {
+                Debug.Log("Julita playing");
+                user2Text.text = "Julita";
+                PlayerPrefs.SetString("player2name",user2Text.text);
+            }
             if (user2Text.text == "")
             {
-                Debug.Log("Pepito2 playing");
                 userText.text = "Julito";
                 PlayerPrefs.SetString("player2name", userText.text);
             }
@@ -118,7 +123,8 @@ public class GameManager : MonoBehaviour
         //Actualizamos marcadores 1 player
         puntosText.text = "Pts. 1P: " + puntosTotales;
         vidasNum.text = "" + numVidas;
-        //Marcadores exclusivos 1 player
+
+        //Marcadores exclusivos 1 player ¿Eliminarlos?
         if (PlayerPrefs.GetString("gameMode") == "1P")
         {
             hiscore = int.Parse(LeerRecordFichero());

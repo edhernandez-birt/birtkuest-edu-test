@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3863687413159417093}
   - component: {fileID: 870396387108365817}
   - component: {fileID: 5379242877817399113}
+  - component: {fileID: 9153338293998333674}
   m_Layer: 7
   m_Name: Babosa_Roja
   m_TagString: Enemy
@@ -189,7 +190,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5285241370788795142}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50d5187b2a68d0840b0e4ef2ac267bbc, type: 3}
   m_Name: 
@@ -213,3 +214,19 @@ MonoBehaviour:
   proyectil: {fileID: 4371264121132766279, guid: ae83ba056f49656428a6b8d26e2a019b, type: 3}
   tiempo: 5
   proyectilSpeed: 5
+--- !u!114 &9153338293998333674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5285241370788795142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbb3493480ad76449c2323f5d0fb75e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  homePos: {fileID: 0}
+  speed: 2
+  maxRange: 10
+  minRange: 1

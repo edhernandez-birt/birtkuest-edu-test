@@ -56,4 +56,37 @@ public class BabosaController : MonoBehaviour
             myAnim.SetBool("isMoving", false);
         }
     }
+
+    private Transform getClosestPlayer()
+    {
+        PlayerControllerGirl[] targets = FindObjectsOfType<PlayerControllerGirl>();
+        if (targets.Length == 0) { return null; }
+        if (targets.Length == 1) { return targets[0].transform; }
+        int idx = 0;
+        double distance = double.MaxValue;
+        for (int i = 0; i < targets.Length; i++)
+        {
+            double di = Vector3.Distance(transform.position, targets[i].transform.position);
+            if (di < distance)
+            {
+                distance = di;
+                idx = i;
+            }
+        }
+        return targets[idx].transform;
+    }
+
+    IEnumerator FadeTo(SpriteRenderer spriteRenderer, float aValue, float aTime)
+    {
+        if (TryGetComponent<Transform>(out Transform transform))
+        {
+            float alpha = spriteRenderer.color.a;
+            for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+            {
+                Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha, aValue, t));
+                spriteRenderer.material.color = newColor;
+                yield return null;
+            }
+        }
+    }
 }

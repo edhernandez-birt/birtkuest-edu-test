@@ -27,6 +27,7 @@ public class LaunchBoomerang : MonoBehaviour
 
     private void FixedUpdate()
     {
+        player = getClosestPlayer();
         if (player != null)
         {
             //Medio segundo antes del lanzamiento inicia la animación de lanzamiento
@@ -60,6 +61,25 @@ public class LaunchBoomerang : MonoBehaviour
                 myAnim.SetBool("isLaunching", false);
             }
         }
+    }
+
+    private Transform getClosestPlayer()
+    {
+        PlayerControllerGirl[] targets = FindObjectsOfType<PlayerControllerGirl>();
+        if (targets.Length == 0) { return null; }
+        if (targets.Length == 1) { return targets[0].transform; }
+        int idx = 0;
+        double distance = double.MaxValue;
+        for (int i = 0; i < targets.Length; i++)
+        {
+            double di = Vector3.Distance(transform.position, targets[i].transform.position);
+            if (di < distance)
+            {
+                distance = di;
+                idx = i;
+            }
+        }
+        return targets[idx].transform;
     }
 
 }

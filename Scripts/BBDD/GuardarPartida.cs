@@ -18,6 +18,14 @@ class GuardarPartida
                 PlayerPrefs.GetInt("totalPoints").ToString() + ";" +
                 PlayerPrefs.GetInt("totalEnemies").ToString() +
                 Environment.NewLine);
+            if (PlayerPrefs.GetString("gameMode")=="2P Split")
+            {
+                File.AppendAllText(rutaBBDD,
+                PlayerPrefs.GetString("player2name") + ";" +
+                PlayerPrefs.GetInt("totalPoints2").ToString() + ";" +
+                PlayerPrefs.GetInt("totalEnemies").ToString() +
+                Environment.NewLine);
+            }
             }
             catch (Exception e)
             {

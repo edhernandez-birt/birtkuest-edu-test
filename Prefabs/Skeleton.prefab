@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1284370232601913978}
   - component: {fileID: 4871794837229862661}
   - component: {fileID: 3819443069718568604}
-  - component: {fileID: 8170827047205212182}
   - component: {fileID: 3167324748070641935}
+  - component: {fileID: 5779247729208699344}
   m_Layer: 7
   m_Name: Skeleton
   m_TagString: Enemy
@@ -189,22 +189,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8170827047205212182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 996602150813633866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f433c1f5bb885ff48b09c4f52c02efde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  homePos: {fileID: 0}
-  speed: 1.2
-  maxRange: 6
-  minRange: 1
 --- !u!114 &3167324748070641935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,3 +204,19 @@ MonoBehaviour:
   proyectil: {fileID: 8301373898124657517, guid: f55d97206f44bc243b9c72a7b054dc46, type: 3}
   tiempo: 5
   proyectilSpeed: 3
+--- !u!114 &5779247729208699344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996602150813633866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbb3493480ad76449c2323f5d0fb75e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  homePos: {fileID: 0}
+  speed: 5
+  maxRange: 7
+  minRange: 0
