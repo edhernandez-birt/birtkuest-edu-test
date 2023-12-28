@@ -40,26 +40,24 @@ public class Lifes : MonoBehaviour
 
         if (vidasActuales == 0)
         {
-            Debug.Log("LIFES ACTUALES== 0");
             Animator animator = this.GetComponent<Animator>();
             animator.SetTrigger("Dead");
-            
+            //Modo 1P fin de juego directamente
             if (PlayerPrefs.GetString("gameMode") == "1P")
             {
                 gestorJuego.FinJuego("dead");
-                Debug.Log("Sin vidas modo 1 player");
-            } else if (PlayerPrefs.GetString("gameMode") == "2P Split")
-            { //Fin de juego si los dos jugadores sin vida
-                Debug.Log("LIFES ACTUALES 2P SPLIT == 0");
+            } //Modo Split solo fin de juego si ya ha muerto antes el otro jugador
+            else if (PlayerPrefs.GetString("gameMode") == "2P Split")
+            { 
                 if (PlayerPrefs.GetInt("playersDead")==1)
                 {
                     gestorJuego.FinJuego("dead");
-                    Debug.Log("Sin vidas modo 2 player SPLIT");
                 }
                 //Guardamos en prefs que ya ha muerto un jugador
-                PlayerPrefs.SetInt("playersDead", 1);
+                int deadCounter = PlayerPrefs.GetInt("playersDead");
+                deadCounter++;
+                PlayerPrefs.SetInt("playersDead", deadCounter);
             }
-            
         }
     }
 

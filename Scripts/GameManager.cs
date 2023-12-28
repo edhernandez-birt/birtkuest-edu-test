@@ -116,12 +116,13 @@ public class GameManager : MonoBehaviour
         //   botonOtraEscena.gameObject.SetActive(false);
 
         //Actualizamos marcadores 1 player
+        puntosText.text = "Pts. 1P: " + puntosTotales;
+        vidasNum.text = "" + numVidas;
+        //Marcadores exclusivos 1 player
         if (PlayerPrefs.GetString("gameMode") == "1P")
         {
             hiscore = int.Parse(LeerRecordFichero());
             textoRecord.text = "HiScore: " + hiscore.ToString();
-            puntosText.text = "Pts. 1P: " + puntosTotales;
-            vidasNum.text = "" + numVidas;
         }
 
         //Actualizamos marcador de vidas y puntos 2 player
@@ -130,10 +131,6 @@ public class GameManager : MonoBehaviour
             puntos2Text.text = "Pts. 2P: " + puntosTotales2;
             vidasNum2.text = "" + numVidas2;
         }
-
-
-
-
     }
 
     // Update is called once per frame
