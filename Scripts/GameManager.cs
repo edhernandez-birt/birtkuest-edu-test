@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI userText;
     [SerializeField] private TextMeshProUGUI user2Text;
     [SerializeField] private GameObject gameOverObject;
+    public ShowLifes showLifes;
     //  public Button botonOtraEscena;
 
     [Header("Game Configuration")]
@@ -82,6 +83,7 @@ public class GameManager : MonoBehaviour
         //Actualizamos marcadores 1 player
         puntosText.text = "Pts. 1P: " + puntosTotales;
         vidasNum.text = "" + numVidas;
+        showLifes.UpdateLifesImages(3);
 
         //Modo 2 jugadores
         if (PlayerPrefs.GetString("gameMode") == "2P Split")
@@ -160,7 +162,7 @@ public class GameManager : MonoBehaviour
         if (id == 1)
         {
             vidasNum.text = "" + vidas;
-
+            showLifes.UpdateLifesImages(vidas);
         }
         else if (id == 2)
         {
