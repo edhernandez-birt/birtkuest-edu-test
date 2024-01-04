@@ -27,7 +27,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI userText;
     [SerializeField] private TextMeshProUGUI user2Text;
     [SerializeField] private GameObject gameOverObject;
-    public ShowLifes showLifes;
+    [SerializeField] private ShowLifes showLifes;
+    [SerializeField] private ShowLifes showLifes2;
     //  public Button botonOtraEscena;
 
     [Header("Game Configuration")]
@@ -103,6 +104,7 @@ public class GameManager : MonoBehaviour
 
             puntos2Text.text = "Pts. 2P: " + puntosTotales2;
             vidasNum2.text = "" + numVidas2;
+            showLifes2.UpdateLifesImages(numVidas2);
 
         }
 
@@ -167,6 +169,7 @@ public class GameManager : MonoBehaviour
         else if (id == 2)
         {
             vidasNum2.text = "" + vidas;
+            showLifes2.UpdateLifesImages(vidas);
 
         }
     }
